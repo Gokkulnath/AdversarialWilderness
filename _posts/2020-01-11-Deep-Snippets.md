@@ -17,7 +17,7 @@ categories: [Deep Learning]
 1. Deeper Densenets are by virtue of their design, act as (pseudo) wider networks. 
 Explanation : 
 2. BatchSize vs Learning Rate:
-![]({{ site.baseurl }/images/DeepSnippets/batchszvslr.jpg "Batch Size vs Learning Rate")
+![]({{ site.baseurl }}/images/DeepSnippets/batchszvslr.jpg "Batch Size vs Learning Rate")
 
 3. Weight Decay vs Learning Rate:
 Overfit -> Reduce Overfitting -> There is no step 3. Remember overfitting doesn’t mean having a lower training loss than validation loss, that is normal. It means you have seen your validation error getting worse, until you see that happening you’re not overfitting. 3 Steps to Training a Really Good Model 18
