@@ -23,15 +23,6 @@
     
   
     
-        ,"post2": {
-            "title": "Title",
-            "content": "Understanding FGSM from Scratch . toc: True | branch: master | badges: true | comments: true | categories: [&quot;Adversarial Machine Learning&quot;] | hide: false | search_exclude: true | metadata_key1: &quot;Deep Learning&quot; | . What is FGSM? . Example Code . import numpy as np import advertorch .",
-            "url": "https://gokkulnath.github.io/adversarialwilderness/2020/02/02/Tour-FGSM.html",
-            "relUrl": "/2020/02/02/Tour-FGSM.html",
-            "date": " • Feb 2, 2020"
-        }
-        
-    
   
     
         ,"post3": {
