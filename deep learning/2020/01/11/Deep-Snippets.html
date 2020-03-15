@@ -1,0 +1,24 @@
+<p><img src="/adversarialwilderness/DeepSnippets/DeepSnippets.jpg" alt="" title="Deep Snippets" /></p>
+<ol>
+  <li>Deeper Densenets are by virtue of their design, act as (pseudo) wider networks. 
+Explanation :</li>
+  <li>
+    <p>BatchSize vs Learning Rate:
+<img src="/adversarialwilderness/DeepSnippets/batchszvslr.jpg" alt="" title="Batch Size vs Learning Rate" /></p>
+  </li>
+  <li>Weight Decay vs Learning Rate:
+Overfit -&gt; Reduce Overfitting -&gt; There is no step 3. Remember overfitting doesn’t mean having a lower training loss than validation loss, that is normal. It means you have seen your validation error getting worse, until you see that happening you’re not overfitting. 3 Steps to Training a Really Good Model 18</li>
+</ol>
+
+<p>Always make sure your validation and training set were normalized in the same way.</p>
+
+<p>Random Seed is not always required.I dont set a random seed, this is very intentional because I want to see variation in my model, I don’t want it to be hidden away behind a fixed seed. Lesson 9: When not to use a seed 
+You can and should schedule everything, your dropout amount, what kind of data augmentation you do, weight decay, learning rate, momentum, everything. It’s very unlikely you would want the same hyperparameters throughout. Lesson 9: Hyperparameter Scheduling</p>
+
+<h1 id="todo">TODO</h1>
+<ul>
+  <li>Things Jeremy says to do - Part 1 (2019) - Deep Learning Course Forums</li>
+  <li>Things Jeremy says to do (Part 2) - Part 2 (2019) - Deep Learning Course Forums</li>
+  <li>Effect of Batch Size on the Updates received by the model</li>
+</ul>
+
