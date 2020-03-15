@@ -3,36 +3,34 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Deep Snippets Jupyter | Adversarial Wilderness</title>
+<title>Understanding FGSM from Scratch | Adversarial Wilderness</title>
 <meta name="generator" content="Jekyll v4.0.0" />
-<meta property="og:title" content="Deep Snippets Jupyter" />
+<meta property="og:title" content="Understanding FGSM from Scratch" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Short Writeups explain concepts of deep learning" />
 <meta property="og:description" content="Short Writeups explain concepts of deep learning" />
-<link rel="canonical" href="https://gokkulnath.github.io/adversarialwilderness/deep%20learning/2020/02/02/Tour-FGSM.html" />
-<meta property="og:url" content="https://gokkulnath.github.io/adversarialwilderness/deep%20learning/2020/02/02/Tour-FGSM.html" />
+<link rel="canonical" href="https://gokkulnath.github.io/adversarialwilderness/adversarial%20machine%20learning/2020/02/02/Tour-FGSM.html" />
+<meta property="og:url" content="https://gokkulnath.github.io/adversarialwilderness/adversarial%20machine%20learning/2020/02/02/Tour-FGSM.html" />
 <meta property="og:site_name" content="Adversarial Wilderness" />
-<meta property="og:image" content="https://gokkulnath.github.io/adversarialwilderness/images/DeepSnippets/DeepSnippets.png" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-02-02T00:00:00-06:00" />
 <script type="application/ld+json">
-{"description":"Short Writeups explain concepts of deep learning","headline":"Deep Snippets Jupyter","dateModified":"2020-02-02T00:00:00-06:00","datePublished":"2020-02-02T00:00:00-06:00","@type":"BlogPosting","image":"https://gokkulnath.github.io/adversarialwilderness/images/DeepSnippets/DeepSnippets.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://gokkulnath.github.io/adversarialwilderness/deep%20learning/2020/02/02/Tour-FGSM.html"},"url":"https://gokkulnath.github.io/adversarialwilderness/deep%20learning/2020/02/02/Tour-FGSM.html","@context":"https://schema.org"}</script>
+{"description":"Short Writeups explain concepts of deep learning","headline":"Understanding FGSM from Scratch","dateModified":"2020-02-02T00:00:00-06:00","datePublished":"2020-02-02T00:00:00-06:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://gokkulnath.github.io/adversarialwilderness/adversarial%20machine%20learning/2020/02/02/Tour-FGSM.html"},"url":"https://gokkulnath.github.io/adversarialwilderness/adversarial%20machine%20learning/2020/02/02/Tour-FGSM.html","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/adversarialwilderness/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://gokkulnath.github.io/adversarialwilderness/feed.xml" title="Adversarial Wilderness" /><link rel="shortcut icon" type="image/x-icon" href="/adversarialwilderness/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Deep Snippets Jupyter | Adversarial Wilderness</title>
+<title>Understanding FGSM from Scratch | Adversarial Wilderness</title>
 <meta name="generator" content="Jekyll v4.0.0" />
-<meta property="og:title" content="Deep Snippets Jupyter" />
+<meta property="og:title" content="Understanding FGSM from Scratch" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Short Writeups explain concepts of deep learning" />
 <meta property="og:description" content="Short Writeups explain concepts of deep learning" />
-<link rel="canonical" href="https://gokkulnath.github.io/adversarialwilderness/deep%20learning/2020/02/02/Tour-FGSM.html" />
-<meta property="og:url" content="https://gokkulnath.github.io/adversarialwilderness/deep%20learning/2020/02/02/Tour-FGSM.html" />
+<link rel="canonical" href="https://gokkulnath.github.io/adversarialwilderness/adversarial%20machine%20learning/2020/02/02/Tour-FGSM.html" />
+<meta property="og:url" content="https://gokkulnath.github.io/adversarialwilderness/adversarial%20machine%20learning/2020/02/02/Tour-FGSM.html" />
 <meta property="og:site_name" content="Adversarial Wilderness" />
-<meta property="og:image" content="https://gokkulnath.github.io/adversarialwilderness/images/DeepSnippets/DeepSnippets.png" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-02-02T00:00:00-06:00" />
 <script type="application/ld+json">
-{"description":"Short Writeups explain concepts of deep learning","headline":"Deep Snippets Jupyter","dateModified":"2020-02-02T00:00:00-06:00","datePublished":"2020-02-02T00:00:00-06:00","@type":"BlogPosting","image":"https://gokkulnath.github.io/adversarialwilderness/images/DeepSnippets/DeepSnippets.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://gokkulnath.github.io/adversarialwilderness/deep%20learning/2020/02/02/Tour-FGSM.html"},"url":"https://gokkulnath.github.io/adversarialwilderness/deep%20learning/2020/02/02/Tour-FGSM.html","@context":"https://schema.org"}</script>
+{"description":"Short Writeups explain concepts of deep learning","headline":"Understanding FGSM from Scratch","dateModified":"2020-02-02T00:00:00-06:00","datePublished":"2020-02-02T00:00:00-06:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://gokkulnath.github.io/adversarialwilderness/adversarial%20machine%20learning/2020/02/02/Tour-FGSM.html"},"url":"https://gokkulnath.github.io/adversarialwilderness/adversarial%20machine%20learning/2020/02/02/Tour-FGSM.html","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
@@ -103,7 +101,7 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Deep Snippets Jupyter</h1><p class="page-description">Short Writeups explain concepts of deep learning</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2020-02-02T00:00:00-06:00" itemprop="datePublished">
+    <h1 class="post-title p-name" itemprop="name headline">Understanding FGSM from Scratch</h1><p class="page-description">Short Writeups explain concepts of deep learning</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2020-02-02T00:00:00-06:00" itemprop="datePublished">
         Feb 2, 2020
       </time>
        • <span class="read-time" title="Estimated read time">
@@ -116,7 +114,7 @@ window.onload = wrap_img;
     
       <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
       
-        <a class="category-tags-link" href="/adversarialwilderness/categories/#Deep Learning">Deep Learning</a>
+        <a class="category-tags-link" href="/adversarialwilderness/categories/#Adversarial Machine Learning">Adversarial Machine Learning</a>
         
       
       </p>
@@ -139,7 +137,10 @@ window.onload = wrap_img;
       </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <!--
+    <ul class="section-nav">
+<li class="toc-entry toc-h1"><a href="#What-is-FGSM?">What is FGSM? </a></li>
+<li class="toc-entry toc-h1"><a href="#Example-Code">Example Code </a></li>
+</ul><!--
 #################################################
 ### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
 #################################################
@@ -151,6 +152,42 @@ window.onload = wrap_img;
     
     
 <div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="What-is-FGSM?">
+<a class="anchor" href="#What-is-FGSM?" aria-hidden="true"><span class="octicon octicon-link"></span></a>What is FGSM?<a class="anchor-link" href="#What-is-FGSM?"> </a>
+</h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Example-Code">
+<a class="anchor" href="#Example-Code" aria-hidden="true"><span class="octicon octicon-link"></span></a>Example Code<a class="anchor-link" href="#Example-Code"> </a>
+</h1>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">advertorch</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
 
 </div>
     
@@ -167,7 +204,7 @@ window.onload = wrap_img;
         theme="github-light"
         crossorigin="anonymous"
         async>
-</script><a class="u-url" href="/adversarialwilderness/deep%20learning/2020/02/02/Tour-FGSM.html" hidden></a>
+</script><a class="u-url" href="/adversarialwilderness/adversarial%20machine%20learning/2020/02/02/Tour-FGSM.html" hidden></a>
 </article>
       </div>
     </main><footer class="site-footer h-card">
