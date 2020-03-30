@@ -4,14 +4,10 @@ title: About Me
 permalink: /about/
 ---
 
-![]({{site.baseurl}}/images/dream_ac885ea3ea.jpg)  
+This is where you put the contents of your *About* page. Like all your pages, it's in [Markdown](https://guides.github.com/features/mastering-markdown/) format.
+
+This website is powered by **[fastpages](https://github.com/fastai/fastpages)** [^1].
 
 
 
-I am 24 years old. I was born in the city of Madurai in India. I lived in Coimbatore for four years while pursuing my undergraduate education. I have also lived in Trichy, Vellore and Chennai during school days. Currently I stay in Bengaluru, Karnataka. I completed my undergraduate education in Electronics and Communication Engineering from the Amrita School of Engineering, Coimbatore on May 2017.
-
-I am interested in Deep Learning, Computer Vision and Data Analytics. I am inclined towards working on projects that involve working on the intersection of these fields. I enjoy playing Table Tennis, Fixing Broken Electronics, Watching Movies and Programming.
-
-I currently work as a Software Development Engineer in Test at Ericsson, Bangalore, Karnataka. I am interested in Robust Machine Learning, Deep Learning and Computer Vision.
-
-
+[^1]:a blogging platform that natively supports Jupyter notebooks in addition to other formats.
