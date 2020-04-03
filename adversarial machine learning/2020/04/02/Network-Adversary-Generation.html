@@ -3,19 +3,20 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Title | Adversarial Wilderness</title>
+<title>Network Adversary Generator | Adversarial Wilderness</title>
 <meta name="generator" content="Jekyll v4.0.0" />
-<meta property="og:title" content="Title" />
+<meta property="og:title" content="Network Adversary Generator" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="summary" />
-<meta property="og:description" content="summary" />
-<link rel="canonical" href="https://gokkulnath.github.io/adversarialwilderness/2020/04/02/Network-Adversary-Generation.html" />
-<meta property="og:url" content="https://gokkulnath.github.io/adversarialwilderness/2020/04/02/Network-Adversary-Generation.html" />
+<meta name="description" content="A Pytorch implementation of Network Adversary Generator CVPR 2018." />
+<meta property="og:description" content="A Pytorch implementation of Network Adversary Generator CVPR 2018." />
+<link rel="canonical" href="https://gokkulnath.github.io/adversarialwilderness/adversarial%20machine%20learning/2020/04/02/Network-Adversary-Generation.html" />
+<meta property="og:url" content="https://gokkulnath.github.io/adversarialwilderness/adversarial%20machine%20learning/2020/04/02/Network-Adversary-Generation.html" />
 <meta property="og:site_name" content="Adversarial Wilderness" />
+<meta property="og:image" content="https://gokkulnath.github.io/adversarialwilderness/resources/Collage_perturbation.v1.png" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-04-02T00:00:00-05:00" />
 <script type="application/ld+json">
-{"description":"summary","headline":"Title","dateModified":"2020-04-02T00:00:00-05:00","datePublished":"2020-04-02T00:00:00-05:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://gokkulnath.github.io/adversarialwilderness/2020/04/02/Network-Adversary-Generation.html"},"url":"https://gokkulnath.github.io/adversarialwilderness/2020/04/02/Network-Adversary-Generation.html","@context":"https://schema.org"}</script>
+{"description":"A Pytorch implementation of Network Adversary Generator CVPR 2018.","headline":"Network Adversary Generator","dateModified":"2020-04-02T00:00:00-05:00","datePublished":"2020-04-02T00:00:00-05:00","@type":"BlogPosting","image":"https://gokkulnath.github.io/adversarialwilderness/resources/Collage_perturbation.v1.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://gokkulnath.github.io/adversarialwilderness/adversarial%20machine%20learning/2020/04/02/Network-Adversary-Generation.html"},"url":"https://gokkulnath.github.io/adversarialwilderness/adversarial%20machine%20learning/2020/04/02/Network-Adversary-Generation.html","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/adversarialwilderness/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://gokkulnath.github.io/adversarialwilderness/feed.xml" title="Adversarial Wilderness" /><!-- the google_analytics_id gets auto inserted from the config file -->
 
@@ -24,19 +25,20 @@
 <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-149929011-2','auto');ga('require','displayfeatures');ga('send','pageview');</script>
 
 <link rel="shortcut icon" type="image/x-icon" href="/adversarialwilderness/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Title | Adversarial Wilderness</title>
+<title>Network Adversary Generator | Adversarial Wilderness</title>
 <meta name="generator" content="Jekyll v4.0.0" />
-<meta property="og:title" content="Title" />
+<meta property="og:title" content="Network Adversary Generator" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="summary" />
-<meta property="og:description" content="summary" />
-<link rel="canonical" href="https://gokkulnath.github.io/adversarialwilderness/2020/04/02/Network-Adversary-Generation.html" />
-<meta property="og:url" content="https://gokkulnath.github.io/adversarialwilderness/2020/04/02/Network-Adversary-Generation.html" />
+<meta name="description" content="A Pytorch implementation of Network Adversary Generator CVPR 2018." />
+<meta property="og:description" content="A Pytorch implementation of Network Adversary Generator CVPR 2018." />
+<link rel="canonical" href="https://gokkulnath.github.io/adversarialwilderness/adversarial%20machine%20learning/2020/04/02/Network-Adversary-Generation.html" />
+<meta property="og:url" content="https://gokkulnath.github.io/adversarialwilderness/adversarial%20machine%20learning/2020/04/02/Network-Adversary-Generation.html" />
 <meta property="og:site_name" content="Adversarial Wilderness" />
+<meta property="og:image" content="https://gokkulnath.github.io/adversarialwilderness/resources/Collage_perturbation.v1.png" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-04-02T00:00:00-05:00" />
 <script type="application/ld+json">
-{"description":"summary","headline":"Title","dateModified":"2020-04-02T00:00:00-05:00","datePublished":"2020-04-02T00:00:00-05:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://gokkulnath.github.io/adversarialwilderness/2020/04/02/Network-Adversary-Generation.html"},"url":"https://gokkulnath.github.io/adversarialwilderness/2020/04/02/Network-Adversary-Generation.html","@context":"https://schema.org"}</script>
+{"description":"A Pytorch implementation of Network Adversary Generator CVPR 2018.","headline":"Network Adversary Generator","dateModified":"2020-04-02T00:00:00-05:00","datePublished":"2020-04-02T00:00:00-05:00","@type":"BlogPosting","image":"https://gokkulnath.github.io/adversarialwilderness/resources/Collage_perturbation.v1.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://gokkulnath.github.io/adversarialwilderness/adversarial%20machine%20learning/2020/04/02/Network-Adversary-Generation.html"},"url":"https://gokkulnath.github.io/adversarialwilderness/adversarial%20machine%20learning/2020/04/02/Network-Adversary-Generation.html","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
@@ -113,7 +115,7 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Title</h1><p class="page-description">summary</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2020-04-02T00:00:00-05:00" itemprop="datePublished">
+    <h1 class="post-title p-name" itemprop="name headline">Network Adversary Generator</h1><p class="page-description">A Pytorch implementation of Network Adversary Generator CVPR 2018.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2020-04-02T00:00:00-05:00" itemprop="datePublished">
         Apr 2, 2020
       </time>
        • <span class="read-time" title="Estimated read time">
@@ -123,6 +125,13 @@ window.onload = wrap_img;
     
 </span></p>
 
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/adversarialwilderness/categories/#Adversarial Machine learning">Adversarial Machine learning</a>
+        
+      
+      </p>
     
 
     
@@ -135,7 +144,72 @@ window.onload = wrap_img;
       </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <!--
+    <ul class="section-nav">
+<li class="toc-entry toc-h1"><a href="#Introduction">Introduction </a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#Motivation">Motivation </a></li>
+<li class="toc-entry toc-h4"><a href="#Key-Results:">Key Results: </a></li>
+<li class="toc-entry toc-h4"><a href="#Aproach">Aproach </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h1"><a href="#Code:">Code: </a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#Data-Preparation">Data Preparation </a></li>
+<li class="toc-entry toc-h3"><a href="#Code-Below-Assumes-Dataset-is-downlaoded-and-setup">Code Below Assumes Dataset is downlaoded and setup </a>
+<ul>
+<li class="toc-entry toc-h5"><a href="#Verify-Dataset">Verify Dataset </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h3"><a href="#Imports">Imports </a></li>
+<li class="toc-entry toc-h3"><a href="#Dataset-and-Dataloaders-Setup">Dataset and Dataloaders Setup </a></li>
+<li class="toc-entry toc-h3"><a href="#Transforms">Transforms </a></li>
+<li class="toc-entry toc-h3"><a href="#Dataset-and-Dataloaders">Dataset and Dataloaders </a></li>
+<li class="toc-entry toc-h2"><a href="#Proposed-Approach">Proposed Approach </a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#Loss-Functions/Objectives">Loss Functions/Objectives </a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#Self-Note:">Self Note: </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h3"><a href="#Generator">Generator </a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#Debugging">Debugging </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h3"><a href="#Setting-up-Discriminator-:-Model-:-Architecture">Setting up Discriminator : Model : Architecture </a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#Run-only-once-:">Run only once : </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h3"><a href="#Choice-of-Hyperparameters">Choice of Hyperparameters </a></li>
+<li class="toc-entry toc-h3"><a href="#Other-Utils">Other Utils </a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#Validating-Model-Utils">Validating Model Utils </a></li>
+<li class="toc-entry toc-h4"><a href="#Setup-Wandb">Setup Wandb </a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#Fit-and-Train-the-Generator">Fit and Train the Generator </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h1"><a href="#Start-Actual-Trainning">Start Actual Trainning </a></li>
+<li class="toc-entry toc-h1"><a href="#Misc:">Misc: </a>
+<ul>
+<li class="toc-entry toc-h5"><a href="#Setup-Caffenet-and-VGG-F--(TODO)">Setup Caffenet and VGG-F  (TODO) </a></li>
+<li class="toc-entry toc-h4"><a href="#Run-the-below-code-first-before-loading-VGG-F">Run the below code first before loading VGG-F </a></li>
+<li class="toc-entry toc-h4"><a href="#Loading-VGG-F">Loading VGG-F </a></li>
+<li class="toc-entry toc-h3"><a href="#Downloading-Trained-Weights">Downloading Trained Weights </a></li>
+<li class="toc-entry toc-h3"><a href="#Evaluating-NAG-performance-across-Models:-(TODO)">Evaluating NAG performance across Models: (TODO) </a></li>
+<li class="toc-entry toc-h3"><a href="#Interpolating-Latent-Dimension-for-NAG">Interpolating Latent Dimension for NAG </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h1"><a href="#Obtained-Perturbations">Obtained Perturbations </a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#References:">References: </a></li>
+</ul>
+</li>
+</ul><!--
 #################################################
 ### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
 #################################################
@@ -151,17 +225,27 @@ window.onload = wrap_img;
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Introduction">Introduction<a class="anchor-link" href="#Introduction"> </a></h1>
+<h1 id="Introduction">
+<a class="anchor" href="#Introduction" aria-hidden="true"><span class="octicon octicon-link"></span></a>Introduction<a class="anchor-link" href="#Introduction"> </a>
+</h1>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Adversarial perturbations can pose a serious threat for deploying machine learning systems. Recent works have shown existence of image-agnostic perturbations that can fool classifiers over most natural images. Existing methods present optimization approaches that solve for a fooling objective with an imperceptibility constraint to craft the perturbations making it very hard to defend.</p>
-<h4 id="Motivation">Motivation<a class="anchor-link" href="#Motivation"> </a></h4><p>Current Approaches for crafting adversaries for a given classifier generate only one perturbation at a time, which is a single instance from the manifold of adversarial perturbations. In order to build robust models, it is essential to explore diverse manifold of adversarial perturbations. This work can be of very useful, when we are using adversarial trainning, where the cost of generation of adversaries is high(Depends on the attack). With this approach, we will be able to generate adversarial noises from the learned distribution of adversarial perturbations.</p>
-<h4 id="Key-Results:">Key Results:<a class="anchor-link" href="#Key-Results:"> </a></h4><p>The author's demonstrate that perturbations crafted by our model</p>
+<h4 id="Motivation">
+<a class="anchor" href="#Motivation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Motivation<a class="anchor-link" href="#Motivation"> </a>
+</h4>
+<p>Current Approaches for crafting adversaries for a given classifier generate only one perturbation at a time, which is a single instance from the manifold of adversarial perturbations. In order to build robust models, it is essential to explore diverse manifold of adversarial perturbations. This work can be of very useful, when we are using adversarial trainning, where the cost of generation of adversaries is high(Depends on the attack). With this approach, we will be able to generate adversarial noises from the learned distribution of adversarial perturbations.</p>
+<h4 id="Key-Results:">
+<a class="anchor" href="#Key-Results:" aria-hidden="true"><span class="octicon octicon-link"></span></a>Key Results:<a class="anchor-link" href="#Key-Results:"> </a>
+</h4>
+<p>The author's demonstrate that perturbations crafted by our model</p>
 <ol>
 <li>achieve state-of-the-art fooling rates</li>
 <li>exhibit wide variety </li>
@@ -171,17 +255,22 @@ window.onload = wrap_img;
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Aproach">Aproach<a class="anchor-link" href="#Aproach"> </a></h4><p>The architecture of the proposed model is inspired from that of GANs and is trained using fooling and diversity objectives. Our trained generator network attempts to capture the distribution of adversarial perturbations for a given classifier and readily
+<h4 id="Aproach">
+<a class="anchor" href="#Aproach" aria-hidden="true"><span class="octicon octicon-link"></span></a>Aproach<a class="anchor-link" href="#Aproach"> </a>
+</h4>
+<p>The architecture of the proposed model is inspired from that of GANs and is trained using fooling and diversity objectives. Our trained generator network attempts to capture the distribution of adversarial perturbations for a given classifier and readily
 generates a wide variety of such perturbations.</p>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="/adversarialwilderness/images/copied_from_nb/resources/nag.png" alt="Proposed approach" /></p>
+<p><img src="/adversarialwilderness/images/copied_from_nb/resources/nag.png" alt="Proposed approach"></p>
 <ul>
 <li><strong>Core idea is to model the distribution of universal adversarial perturbations for a given classifier.</strong></li>
 <li>The image shows a batch of B random vectors {z}<sub>B</sub> transforming into perturbations {delta}<sub>B</sub> by G which get added to the batch of data samples {x}<sub>B</sub>.</li>
@@ -193,15 +282,22 @@ generates a wide variety of such perturbations.</p>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Code:">Code:<a class="anchor-link" href="#Code:"> </a></h1>
+<h1 id="Code:">
+<a class="anchor" href="#Code:" aria-hidden="true"><span class="octicon octicon-link"></span></a>Code:<a class="anchor-link" href="#Code:"> </a>
+</h1>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Data-Preparation">Data Preparation<a class="anchor-link" href="#Data-Preparation"> </a></h3><ul>
+<h3 id="Data-Preparation">
+<a class="anchor" href="#Data-Preparation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Data Preparation<a class="anchor-link" href="#Data-Preparation"> </a>
+</h3>
+<ul>
 <li>Download of Dataset 
 <strong>P.S</strong>: Randomly Sampled 10 instances from each target class as described in the paper.</li>
 <li>Option 1: Download from Archive.org<ul>
@@ -211,8 +307,10 @@ generates a wide variety of such perturbations.</p>
 </ul>
 </li>
 <li>Option 2 : Mega Download Link for Train abd Validation data of Imagenet 2012 (Obtained from Kaggle)<ul>
-<li>Validation Data: <a href="https://mega.nz/#!yDoTDIyD!RjN6OBA92-KLpNqDeLS3OzwmAYesEbTsiQat9hT6p6s">Mega Link</a></li>
-<li>Trainning Data: <a href="https://mega.nz/#!vKY0WSDa!4aibnBkiXUrO9MkhQlLGXac7wLF5HY7O4LzfdFEaeQU">Mega Link</a> <!-- - If link fails to work use the following Colab notebook to generate your own subset of trainning examples. [Link](https://colab.research.google.com/drive/1LbZBfgqntWb3HuC3UFyF_FvwnHtd1xTA) --></li>
+<li>Validation Data: <a href="https://mega.nz/#!yDoTDIyD!RjN6OBA92-KLpNqDeLS3OzwmAYesEbTsiQat9hT6p6s">Mega Link</a>
+</li>
+<li>Trainning Data: <a href="https://mega.nz/#!vKY0WSDa!4aibnBkiXUrO9MkhQlLGXac7wLF5HY7O4LzfdFEaeQU">Mega Link</a> <!-- - If link fails to work use the following Colab notebook to generate your own subset of trainning examples. [Link](https://colab.research.google.com/drive/1LbZBfgqntWb3HuC3UFyF_FvwnHtd1xTA) -->
+</li>
 </ul>
 </li>
 <li>Setting up of Folder Structure
@@ -222,58 +320,69 @@ For Easier handling and reproducibility of results download from mega link </li>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Code-Below-Assumes-Dataset-is-downlaoded-and-setup">Code Below Assumes Dataset is downlaoded and setup<a class="anchor-link" href="#Code-Below-Assumes-Dataset-is-downlaoded-and-setup"> </a></h3>
+<h3 id="Code-Below-Assumes-Dataset-is-downlaoded-and-setup">
+<a class="anchor" href="#Code-Below-Assumes-Dataset-is-downlaoded-and-setup" aria-hidden="true"><span class="octicon octicon-link"></span></a>Code Below Assumes Dataset is downlaoded and setup<a class="anchor-link" href="#Code-Below-Assumes-Dataset-is-downlaoded-and-setup"> </a>
+</h3>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h5 id="Verify-Dataset">Verify Dataset<a class="anchor-link" href="#Verify-Dataset"> </a></h5>
+<h5 id="Verify-Dataset">
+<a class="anchor" href="#Verify-Dataset" aria-hidden="true"><span class="octicon octicon-link"></span></a>Verify Dataset<a class="anchor-link" href="#Verify-Dataset"> </a>
+</h5>
 </div>
 </div>
 </div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p></p>
 <div class="input">
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">glob</span> <span class="kn">import</span> <span class="n">glob</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#collapse-hide</span>
+<span class="kn">from</span> <span class="nn">glob</span> <span class="kn">import</span> <span class="n">glob</span>
 
 <span class="n">train_ok</span> <span class="o">=</span> <span class="kc">True</span>
 <span class="n">val_ok</span> <span class="o">=</span> <span class="kc">True</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Training Data Verification&quot;</span><span class="p">)</span>
-<span class="n">cls_count</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">glob</span><span class="p">(</span><span class="s2">&quot;ILSVRC/train/*&quot;</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Total Number of Classes: </span><span class="si">{}</span><span class="s2"> in train directory&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">cls_count</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Training Data Verification"</span><span class="p">)</span>
+<span class="n">cls_count</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">glob</span><span class="p">(</span><span class="s2">"ILSVRC/train/*"</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Total Number of Classes: </span><span class="si">{}</span><span class="s2"> in train directory"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">cls_count</span><span class="p">))</span>
 <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="k">for</span> <span class="n">cls_</span> <span class="ow">in</span> <span class="n">glob</span><span class="p">(</span><span class="s2">&quot;ILSVRC/train/*&quot;</span><span class="p">):</span>
-    <span class="n">imgs</span> <span class="o">=</span> <span class="n">glob</span><span class="p">(</span><span class="n">cls_</span> <span class="o">+</span> <span class="s2">&quot;/*&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">cls_</span> <span class="ow">in</span> <span class="n">glob</span><span class="p">(</span><span class="s2">"ILSVRC/train/*"</span><span class="p">):</span>
+    <span class="n">imgs</span> <span class="o">=</span> <span class="n">glob</span><span class="p">(</span><span class="n">cls_</span> <span class="o">+</span> <span class="s2">"/*"</span><span class="p">)</span>
     <span class="n">img_count</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">imgs</span><span class="p">)</span>
     <span class="n">count</span> <span class="o">+=</span> <span class="n">img_count</span>
     <span class="k">if</span> <span class="n">img_count</span> <span class="o">!=</span> <span class="mi">10</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">cls_</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;/&quot;</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">img_count</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">cls_</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">"/"</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">img_count</span><span class="p">)</span>
         <span class="n">train_ok</span><span class="o">=</span><span class="kc">False</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Total </span><span class="si">{}</span><span class="s2"> number of files in </span><span class="si">{}</span><span class="s2"> classes. i.e 10 Images/Class&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">count</span><span class="p">,</span> <span class="n">cls_count</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Total </span><span class="si">{}</span><span class="s2"> number of files in </span><span class="si">{}</span><span class="s2"> classes. i.e 10 Images/Class"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">count</span><span class="p">,</span> <span class="n">cls_count</span><span class="p">))</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Validation Data Verification&quot;</span><span class="p">)</span>
-<span class="n">val_files</span> <span class="o">=</span> <span class="n">glob</span><span class="p">(</span><span class="s2">&quot;ILSVRC/valid/*&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Validation Data Verification"</span><span class="p">)</span>
+<span class="n">val_files</span> <span class="o">=</span> <span class="n">glob</span><span class="p">(</span><span class="s2">"ILSVRC/valid/*"</span><span class="p">)</span>
 <span class="n">val_count</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">val_files</span><span class="p">)</span>
 <span class="k">if</span> <span class="n">val_count</span> <span class="o">==</span> <span class="mi">50000</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Validation Data has correct number of files i.e </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">val_count</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Validation Data has correct number of files i.e </span><span class="si">{}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">val_count</span><span class="p">))</span>
 <span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Validation Data has some issue. Has following number of file : </span><span class="si">{}</span><span class="s2">. Kindly Check!!&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">val_count</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Validation Data has some issue. Has following number of file : </span><span class="si">{}</span><span class="s2">. Kindly Check!!"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">val_count</span><span class="p">))</span>
     <span class="n">val_ok</span><span class="o">=</span><span class="kc">False</span>
 <span class="k">if</span> <span class="n">train_ok</span> <span class="ow">and</span> <span class="n">val_ok</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Dataset is Setup Correctly&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Dataset is Setup Correctly"</span><span class="p">)</span>
 </pre></div>
 
     </div>
 </div>
 </div>
 
+    </details>
 <div class="output_wrapper">
 <div class="output">
 
@@ -296,20 +405,27 @@ Dataset is Setup Correctly
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Imports">Imports<a class="anchor-link" href="#Imports"> </a></h3>
+<h3 id="Imports">
+<a class="anchor" href="#Imports" aria-hidden="true"><span class="octicon octicon-link"></span></a>Imports<a class="anchor-link" href="#Imports"> </a>
+</h3>
 </div>
 </div>
 </div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p></p>
 <div class="input">
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">torch</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#collapse-hide</span>
+<span class="kn">import</span> <span class="nn">torch</span>
 <span class="kn">import</span> <span class="nn">torch.nn</span> <span class="k">as</span> <span class="nn">nn</span>
 <span class="kn">from</span> <span class="nn">torch</span> <span class="kn">import</span> <span class="n">optim</span>
 <span class="kn">import</span> <span class="nn">torch.nn.functional</span> <span class="k">as</span> <span class="nn">F</span>
@@ -335,6 +451,7 @@ Dataset is Setup Correctly
 </div>
 </div>
 
+    </details>
 </div>
     
 
@@ -346,9 +463,9 @@ Dataset is Setup Correctly
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">ngpu</span><span class="o">=</span><span class="n">torch</span><span class="o">.</span><span class="n">cuda</span><span class="o">.</span><span class="n">device_count</span><span class="p">()</span>
-<span class="n">device</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">device</span><span class="p">(</span><span class="s2">&quot;cuda&quot;</span> <span class="k">if</span> <span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">cuda</span><span class="o">.</span><span class="n">is_available</span><span class="p">()</span> <span class="ow">and</span> <span class="n">ngpu</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="k">else</span> <span class="s2">&quot;cpu&quot;</span><span class="p">)</span>
+<span class="n">device</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">device</span><span class="p">(</span><span class="s2">"cuda"</span> <span class="k">if</span> <span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">cuda</span><span class="o">.</span><span class="n">is_available</span><span class="p">()</span> <span class="ow">and</span> <span class="n">ngpu</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="k">else</span> <span class="s2">"cpu"</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Using Pytorch Version : </span><span class="si">{}</span><span class="s2"> and Torchvision Version : </span><span class="si">{}</span><span class="s2">. Using Device </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">__version__</span><span class="p">,</span><span class="n">torchvision</span><span class="o">.</span><span class="n">__version__</span><span class="p">,</span><span class="n">device</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Using Pytorch Version : </span><span class="si">{}</span><span class="s2"> and Torchvision Version : </span><span class="si">{}</span><span class="s2">. Using Device </span><span class="si">{}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">__version__</span><span class="p">,</span><span class="n">torchvision</span><span class="o">.</span><span class="n">__version__</span><span class="p">,</span><span class="n">device</span><span class="p">))</span>
 </pre></div>
 
     </div>
@@ -372,9 +489,12 @@ Dataset is Setup Correctly
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Dataset-and-Dataloaders-Setup">Dataset and Dataloaders Setup<a class="anchor-link" href="#Dataset-and-Dataloaders-Setup"> </a></h3>
+<h3 id="Dataset-and-Dataloaders-Setup">
+<a class="anchor" href="#Dataset-and-Dataloaders-Setup" aria-hidden="true"><span class="octicon octicon-link"></span></a>Dataset and Dataloaders Setup<a class="anchor-link" href="#Dataset-and-Dataloaders-Setup"> </a>
+</h3>
 </div>
 </div>
 </div>
@@ -385,10 +505,10 @@ Dataset is Setup Correctly
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">dataset_path</span><span class="o">=</span><span class="sa">r</span><span class="s1">&#39;ILSVRC/&#39;</span>
-<span class="n">train_dataset_path</span><span class="o">=</span><span class="n">dataset_path</span><span class="o">+</span><span class="s1">&#39;train&#39;</span>
-<span class="n">test_dataset_path</span><span class="o">=</span><span class="n">dataset_path</span><span class="o">+</span><span class="s1">&#39;valid&#39;</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Dataset root Folder:</span><span class="si">{}</span><span class="s2">. Train Data Path: </span><span class="si">{}</span><span class="s2">. Validation Data Path </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">dataset_path</span><span class="p">,</span><span class="n">train_dataset_path</span><span class="p">,</span><span class="n">test_dataset_path</span><span class="p">))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">dataset_path</span><span class="o">=</span><span class="sa">r</span><span class="s1">'ILSVRC/'</span>
+<span class="n">train_dataset_path</span><span class="o">=</span><span class="n">dataset_path</span><span class="o">+</span><span class="s1">'train'</span>
+<span class="n">test_dataset_path</span><span class="o">=</span><span class="n">dataset_path</span><span class="o">+</span><span class="s1">'valid'</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Dataset root Folder:</span><span class="si">{}</span><span class="s2">. Train Data Path: </span><span class="si">{}</span><span class="s2">. Validation Data Path </span><span class="si">{}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">dataset_path</span><span class="p">,</span><span class="n">train_dataset_path</span><span class="p">,</span><span class="n">test_dataset_path</span><span class="p">))</span>
 </pre></div>
 
     </div>
@@ -423,10 +543,10 @@ Dataset is Setup Correctly
 <span class="n">label_dict</span><span class="o">=</span><span class="p">{}</span>
 <span class="n">label_idx</span><span class="o">=</span><span class="p">{}</span>
 
-<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;ILSVRC/LOC_synset_mapping.txt&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'ILSVRC/LOC_synset_mapping.txt'</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
     <span class="n">lines</span><span class="o">=</span><span class="n">file</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
     <span class="k">for</span> <span class="n">idx</span><span class="p">,</span><span class="n">line</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">lines</span><span class="p">):</span>
-        <span class="n">label</span><span class="p">,</span><span class="n">actual</span> <span class="o">=</span><span class="n">line</span><span class="o">.</span><span class="n">strip</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">,</span><span class="n">maxsplit</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+        <span class="n">label</span><span class="p">,</span><span class="n">actual</span> <span class="o">=</span><span class="n">line</span><span class="o">.</span><span class="n">strip</span><span class="p">(</span><span class="s1">'</span><span class="se">\n</span><span class="s1">'</span><span class="p">)</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">' '</span><span class="p">,</span><span class="n">maxsplit</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
         <span class="n">label_dict</span><span class="p">[</span><span class="n">label</span><span class="p">]</span><span class="o">=</span><span class="n">actual</span>
         <span class="n">label_idx</span><span class="p">[</span><span class="n">label</span><span class="p">]</span><span class="o">=</span><span class="n">idx</span>
         
@@ -439,9 +559,12 @@ Dataset is Setup Correctly
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Transforms">Transforms<a class="anchor-link" href="#Transforms"> </a></h3>
+<h3 id="Transforms">
+<a class="anchor" href="#Transforms" aria-hidden="true"><span class="octicon octicon-link"></span></a>Transforms<a class="anchor-link" href="#Transforms"> </a>
+</h3>
 </div>
 </div>
 </div>
@@ -469,9 +592,12 @@ Dataset is Setup Correctly
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Dataset-and-Dataloaders">Dataset and Dataloaders<a class="anchor-link" href="#Dataset-and-Dataloaders"> </a></h3>
+<h3 id="Dataset-and-Dataloaders">
+<a class="anchor" href="#Dataset-and-Dataloaders" aria-hidden="true"><span class="octicon octicon-link"></span></a>Dataset and Dataloaders<a class="anchor-link" href="#Dataset-and-Dataloaders"> </a>
+</h3>
 </div>
 </div>
 </div>
@@ -488,26 +614,26 @@ Dataset is Setup Correctly
         <span class="bp">self</span><span class="o">.</span><span class="n">transform</span><span class="o">=</span><span class="n">transform</span>
        
         <span class="bp">self</span><span class="o">.</span><span class="n">subset</span><span class="o">=</span><span class="n">subset</span>
-        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">subset</span><span class="o">==</span><span class="s1">&#39;train&#39;</span><span class="p">:</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">subset</span><span class="o">==</span><span class="s1">'train'</span><span class="p">:</span>
             <span class="n">data_dir</span><span class="o">=</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">root_dir</span><span class="p">,</span><span class="bp">self</span><span class="o">.</span><span class="n">subset</span><span class="p">)</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">images_fn</span><span class="o">=</span><span class="n">glob</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">data_dir</span><span class="si">}</span><span class="s1">/*/*&#39;</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">images_fn</span><span class="o">=</span><span class="n">glob</span><span class="p">(</span><span class="sa">f</span><span class="s1">'</span><span class="si">{</span><span class="n">data_dir</span><span class="si">}</span><span class="s1">/*/*'</span><span class="p">)</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">labels</span><span class="o">=</span><span class="p">[</span><span class="n">Path</span><span class="p">(</span><span class="n">fn</span><span class="p">)</span><span class="o">.</span><span class="n">parent</span><span class="o">.</span><span class="n">name</span> <span class="k">for</span> <span class="n">fn</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">images_fn</span><span class="p">]</span>
-        <span class="k">elif</span> <span class="n">subset</span> <span class="o">==</span><span class="s1">&#39;valid&#39;</span><span class="p">:</span>
-            <span class="n">df</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;ILSVRC/LOC_val_solution.csv&#39;</span><span class="p">)</span>
-            <span class="n">df</span><span class="p">[</span><span class="s1">&#39;label&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;PredictionString&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">,</span><span class="n">n</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">expand</span><span class="o">=</span><span class="kc">True</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
-            <span class="n">df</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;PredictionString&#39;</span><span class="p">])</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">images_fn</span><span class="o">=</span><span class="s1">&#39;ILSVRC/valid/&#39;</span><span class="o">+</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;ImageId&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="o">+</span><span class="s1">&#39;.JPEG&#39;</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">labels</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;label&#39;</span><span class="p">]</span>
+        <span class="k">elif</span> <span class="n">subset</span> <span class="o">==</span><span class="s1">'valid'</span><span class="p">:</span>
+            <span class="n">df</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'ILSVRC/LOC_val_solution.csv'</span><span class="p">)</span>
+            <span class="n">df</span><span class="p">[</span><span class="s1">'label'</span><span class="p">]</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">'PredictionString'</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">' '</span><span class="p">,</span><span class="n">n</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">expand</span><span class="o">=</span><span class="kc">True</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+            <span class="n">df</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">'PredictionString'</span><span class="p">])</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">images_fn</span><span class="o">=</span><span class="s1">'ILSVRC/valid/'</span><span class="o">+</span><span class="n">df</span><span class="p">[</span><span class="s1">'ImageId'</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="o">+</span><span class="s1">'.JPEG'</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">labels</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">'label'</span><span class="p">]</span>
         <span class="k">else</span><span class="p">:</span>
             <span class="k">raise</span> <span class="ne">ValueError</span>
-        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot; Number of instances in </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">subset</span><span class="si">}</span><span class="s2"> subset of Dataset: </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">images_fn</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>       
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">" Number of instances in </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">subset</span><span class="si">}</span><span class="s2"> subset of Dataset: </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">images_fn</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>       
 
     <span class="k">def</span> <span class="fm">__getitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">idx</span><span class="p">):</span>
         <span class="n">fn</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">images_fn</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span>
         <span class="n">label</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">labels</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span>
         <span class="n">image</span><span class="o">=</span><span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">fn</span><span class="p">)</span>
-        <span class="k">if</span> <span class="n">image</span><span class="o">.</span><span class="n">getbands</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;L&#39;</span><span class="p">:</span>
-            <span class="n">image</span> <span class="o">=</span> <span class="n">image</span><span class="o">.</span><span class="n">convert</span><span class="p">(</span><span class="s1">&#39;RGB&#39;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">image</span><span class="o">.</span><span class="n">getbands</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s1">'L'</span><span class="p">:</span>
+            <span class="n">image</span> <span class="o">=</span> <span class="n">image</span><span class="o">.</span><span class="n">convert</span><span class="p">(</span><span class="s1">'RGB'</span><span class="p">)</span>
         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">transform</span><span class="p">:</span>
             <span class="n">image</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">image</span><span class="p">)</span>    
         <span class="k">return</span> <span class="n">image</span><span class="p">,</span><span class="n">label_idx</span><span class="p">[</span><span class="n">label</span><span class="p">]</span>
@@ -515,9 +641,9 @@ Dataset is Setup Correctly
     <span class="k">def</span> <span class="fm">__len__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">images_fn</span><span class="p">)</span>
         
-<span class="n">data_train</span><span class="o">=</span><span class="n">ImageFolder</span><span class="p">(</span><span class="n">root</span><span class="o">=</span><span class="s1">&#39;ILSVRC/train&#39;</span><span class="p">,</span><span class="n">transform</span><span class="o">=</span><span class="n">preprocess</span><span class="p">)</span>
+<span class="n">data_train</span><span class="o">=</span><span class="n">ImageFolder</span><span class="p">(</span><span class="n">root</span><span class="o">=</span><span class="s1">'ILSVRC/train'</span><span class="p">,</span><span class="n">transform</span><span class="o">=</span><span class="n">preprocess</span><span class="p">)</span>
 <span class="n">class2idx</span><span class="o">=</span><span class="n">data_train</span><span class="o">.</span><span class="n">class_to_idx</span>
-<span class="n">data_valid</span><span class="o">=</span><span class="n">CustomDataset</span><span class="p">(</span><span class="n">subset</span><span class="o">=</span><span class="s1">&#39;valid&#39;</span><span class="p">,</span><span class="n">root_dir</span><span class="o">=</span><span class="n">dataset_path</span><span class="p">,</span><span class="n">transform</span><span class="o">=</span><span class="n">preprocess</span><span class="p">)</span>
+<span class="n">data_valid</span><span class="o">=</span><span class="n">CustomDataset</span><span class="p">(</span><span class="n">subset</span><span class="o">=</span><span class="s1">'valid'</span><span class="p">,</span><span class="n">root_dir</span><span class="o">=</span><span class="n">dataset_path</span><span class="p">,</span><span class="n">transform</span><span class="o">=</span><span class="n">preprocess</span><span class="p">)</span>
 
 <span class="n">train_num</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">data_train</span><span class="p">)</span>
 <span class="n">val_num</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">data_valid</span><span class="p">)</span>
@@ -544,15 +670,19 @@ Dataset is Setup Correctly
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Proposed-Approach">Proposed Approach<a class="anchor-link" href="#Proposed-Approach"> </a></h2>
+<h2 id="Proposed-Approach">
+<a class="anchor" href="#Proposed-Approach" aria-hidden="true"><span class="octicon octicon-link"></span></a>Proposed Approach<a class="anchor-link" href="#Proposed-Approach"> </a>
+</h2>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="/adversarialwilderness/images/copied_from_nb/resources/nag.png" alt="Proposed approach" /></p>
+<p><img src="/adversarialwilderness/images/copied_from_nb/resources/nag.png" alt="Proposed approach"></p>
 <ul>
 <li><strong>Core idea is to model the distribution of universal adversarial perturbations for a given classifier.</strong></li>
 <li>The image shows a batch of B random vectors {z}<sub>B</sub> transforming into perturbations {delta}<sub>B</sub> by G which get added to the batch of data samples {x}<sub>B</sub>.</li>
@@ -564,9 +694,12 @@ Dataset is Setup Correctly
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Loss-Functions/Objectives">Loss Functions/Objectives<a class="anchor-link" href="#Loss-Functions/Objectives"> </a></h3>
+<h3 id="Loss-Functions/Objectives">
+<a class="anchor" href="#Loss-Functions/Objectives" aria-hidden="true"><span class="octicon octicon-link"></span></a>Loss Functions/Objectives<a class="anchor-link" href="#Loss-Functions/Objectives"> </a>
+</h3>
 </div>
 </div>
 </div>
@@ -578,41 +711,41 @@ Dataset is Setup Correctly
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">fooling_objective</span><span class="p">(</span><span class="n">qc_</span><span class="p">):</span>
-    <span class="sd">&#39;&#39;&#39;Helper function to computer compute -log(1-qc&#39;), </span>
-<span class="sd">    where qc&#39; is the adversarial probability of the class having </span>
+    <span class="sd">'''Helper function to computer compute -log(1-qc'), </span>
+<span class="sd">    where qc' is the adversarial probability of the class having </span>
 <span class="sd">    maximum probability in the corresponding clean probability</span>
-<span class="sd">    qc&#39; ---&gt; qc_</span>
+<span class="sd">    qc' ---&gt; qc_</span>
 <span class="sd">    Parameters: </span>
 <span class="sd">    prob_vec : Probability vector for the clean batch</span>
 <span class="sd">    adv_prob_vec : Probability vecotr of the adversarial batch</span>
 <span class="sd">    Returns: </span>
-<span class="sd">    -log(1-qc&#39;) , qc&#39;</span>
+<span class="sd">    -log(1-qc') , qc'</span>
 <span class="sd">    </span>
-<span class="sd">    &#39;&#39;&#39;</span>  
+<span class="sd">    '''</span>  
     <span class="c1"># Get the largest probablities from predictions : Shape (bs,1)</span>
     <span class="n">qc_</span><span class="o">=</span><span class="n">qc_</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
     <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="o">*</span><span class="n">torch</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">qc_</span><span class="p">)</span> <span class="p">,</span> <span class="n">qc_</span>
 
 <span class="k">def</span> <span class="nf">diversity_objective</span><span class="p">(</span><span class="n">prob_vec_no_shuffle</span><span class="p">,</span> <span class="n">prob_vec_shuffled</span><span class="p">):</span>
-    <span class="sd">&#39;&#39;&#39;Helper function to calculate the cosine distance between two probability vectors</span>
+    <span class="sd">'''Helper function to calculate the cosine distance between two probability vectors</span>
 <span class="sd">    Parameters: </span>
 <span class="sd">    prob_vec : Probability vector for the clean batch</span>
 <span class="sd">    adv_prob_vec : Probability vector for the adversarial batch</span>
 <span class="sd">    Returns : </span>
 <span class="sd">    Cosine distance between the corresponding clean and adversarial batches</span>
-<span class="sd">    &#39;&#39;&#39;</span>    
+<span class="sd">    '''</span>    
     <span class="k">return</span> <span class="n">torch</span><span class="o">.</span><span class="n">cosine_similarity</span><span class="p">(</span><span class="n">prob_vec_no_shuffle</span><span class="p">,</span><span class="n">prob_vec_shuffled</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
 
 <span class="c1">## TODO : Not Required. As we always take the last layer.</span>
 
 <span class="k">def</span> <span class="nf">intermediate_activation_objective</span><span class="p">(</span><span class="n">layer_name</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
-    <span class="sd">&#39;&#39;&#39; Extract the activations of any intermediate layer for:</span>
+    <span class="sd">''' Extract the activations of any intermediate layer for:</span>
 <span class="sd">    1. batch of images (of batch size=32) corrupted by the perturbations (of batch size=32) </span>
 <span class="sd">    2. same batch of images corrupted by same batch of perturbations but in different (random) order</span>
-<span class="sd">    (in this case the intermdeiate layer is set to &#39;res4f&#39; of ResNet 50 architecture)</span>
-<span class="sd">    &#39;&#39;&#39;</span>
-    <span class="k">if</span> <span class="n">arch</span> <span class="o">==</span><span class="s1">&#39;resnet50&#39;</span><span class="p">:</span>
-        <span class="n">layer_name</span><span class="o">=</span><span class="s1">&#39;res4f&#39;</span>
+<span class="sd">    (in this case the intermdeiate layer is set to 'res4f' of ResNet 50 architecture)</span>
+<span class="sd">    '''</span>
+    <span class="k">if</span> <span class="n">arch</span> <span class="o">==</span><span class="s1">'resnet50'</span><span class="p">:</span>
+        <span class="n">layer_name</span><span class="o">=</span><span class="s1">'res4f'</span>
     
     <span class="k">pass</span>
 </pre></div>
@@ -624,27 +757,36 @@ Dataset is Setup Correctly
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Self-Note:">Self Note:<a class="anchor-link" href="#Self-Note:"> </a></h4><ul>
+<h4 id="Self-Note:">
+<a class="anchor" href="#Self-Note:" aria-hidden="true"><span class="octicon octicon-link"></span></a>Self Note:<a class="anchor-link" href="#Self-Note:"> </a>
+</h4>
+<ul>
 <li>Effect of ConvTranspose2d : It is a combination of upsampling and convolution layers used to increase the spatial resolution of the tensor</li>
 </ul>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Generator">Generator<a class="anchor-link" href="#Generator"> </a></h3><ul>
+<h3 id="Generator">
+<a class="anchor" href="#Generator" aria-hidden="true"><span class="octicon octicon-link"></span></a>Generator<a class="anchor-link" href="#Generator"> </a>
+</h3>
+<ul>
 <li>Architecture of our generator (G) unchanged for different target CNN architectures</li>
 </ul>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="/adversarialwilderness/images/copied_from_nb/resources/DCGAN.png" alt="DCGAN" /></p>
+<p><img src="/adversarialwilderness/images/copied_from_nb/resources/DCGAN.png" alt="DCGAN"></p>
 
 </div>
 </div>
@@ -708,37 +850,48 @@ Dataset is Setup Correctly
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Debugging">Debugging<a class="anchor-link" href="#Debugging"> </a></h4>
+<h4 id="Debugging">
+<a class="anchor" href="#Debugging" aria-hidden="true"><span class="octicon octicon-link"></span></a>Debugging<a class="anchor-link" href="#Debugging"> </a>
+</h4>
 </div>
 </div>
 </div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p></p>
 <div class="input">
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">if</span> <span class="n">debug</span><span class="p">:</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#collapse-hide</span>
+<span class="k">if</span> <span class="n">debug</span><span class="p">:</span>
     <span class="k">try</span><span class="p">:</span>
         <span class="kn">from</span> <span class="nn">torchsummary</span> <span class="kn">import</span> <span class="n">summary</span>
         <span class="n">summary</span><span class="p">(</span><span class="n">adversarygen</span><span class="p">,(</span><span class="n">nz</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span>
     <span class="k">except</span><span class="p">:</span>
-        <span class="k">raise</span><span class="p">(</span><span class="s1">&#39;Check torchsummary is installed. If not install using the command pip install torchsummary&#39;</span><span class="p">)</span>
+        <span class="k">raise</span><span class="p">(</span><span class="s1">'Check torchsummary is installed. If not install using the command pip install torchsummary'</span><span class="p">)</span>
 </pre></div>
 
     </div>
 </div>
 </div>
 
+    </details>
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Setting-up-Discriminator-:-Model-:-Architecture">Setting up Discriminator : Model : Architecture<a class="anchor-link" href="#Setting-up-Discriminator-:-Model-:-Architecture"> </a></h3>
+<h3 id="Setting-up-Discriminator-:-Model-:-Architecture">
+<a class="anchor" href="#Setting-up-Discriminator-:-Model-:-Architecture" aria-hidden="true"><span class="octicon octicon-link"></span></a>Setting up Discriminator : Model : Architecture<a class="anchor-link" href="#Setting-up-Discriminator-:-Model-:-Architecture"> </a>
+</h3>
 </div>
 </div>
 </div>
@@ -753,11 +906,11 @@ Dataset is Setup Correctly
 
 
 <span class="n">model_dict</span> <span class="o">=</span><span class="p">{</span>
-    <span class="s1">&#39;googlenet&#39;</span><span class="p">:</span> <span class="n">googlenet</span><span class="p">,</span>
-    <span class="s1">&#39;vgg16&#39;</span><span class="p">:</span> <span class="n">vgg16</span> <span class="p">,</span>
-    <span class="s1">&#39;vgg19&#39;</span><span class="p">:</span><span class="n">vgg19</span><span class="p">,</span> 
-    <span class="s1">&#39;resnet152&#39;</span><span class="p">:</span><span class="n">resnet152</span><span class="p">,</span> <span class="c1"># TODO Generate Perturbations</span>
-    <span class="s1">&#39;resnet50&#39;</span><span class="p">:</span><span class="n">resnet50</span>    <span class="c1"># TODO Generate Perturbations </span>
+    <span class="s1">'googlenet'</span><span class="p">:</span> <span class="n">googlenet</span><span class="p">,</span>
+    <span class="s1">'vgg16'</span><span class="p">:</span> <span class="n">vgg16</span> <span class="p">,</span>
+    <span class="s1">'vgg19'</span><span class="p">:</span><span class="n">vgg19</span><span class="p">,</span> 
+    <span class="s1">'resnet152'</span><span class="p">:</span><span class="n">resnet152</span><span class="p">,</span> <span class="c1"># TODO Generate Perturbations</span>
+    <span class="s1">'resnet50'</span><span class="p">:</span><span class="n">resnet50</span>    <span class="c1"># TODO Generate Perturbations </span>
     
 <span class="p">}</span>
 </pre></div>
@@ -769,22 +922,29 @@ Dataset is Setup Correctly
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Run-only-once-:">Run only once :<a class="anchor-link" href="#Run-only-once-:"> </a></h4>
+<h4 id="Run-only-once-:">
+<a class="anchor" href="#Run-only-once-:" aria-hidden="true"><span class="octicon octicon-link"></span></a>Run only once :<a class="anchor-link" href="#Run-only-once-:"> </a>
+</h4>
 </div>
 </div>
 </div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p></p>
 <div class="input">
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Get all Pretrained Weights:</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#collapse-hide</span>
+<span class="c1"># Get all Pretrained Weights:</span>
 <span class="k">for</span> <span class="n">arch</span> <span class="ow">in</span> <span class="n">model_dict</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
-    <span class="k">if</span> <span class="n">arch</span> <span class="o">!=</span><span class="s1">&#39;vgg-f&#39;</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">arch</span> <span class="o">!=</span><span class="s1">'vgg-f'</span><span class="p">:</span>
         <span class="n">model</span><span class="o">=</span><span class="n">model_dict</span><span class="p">[</span><span class="n">arch</span><span class="p">](</span><span class="n">pretrained</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 
@@ -792,12 +952,17 @@ Dataset is Setup Correctly
 </div>
 </div>
 
+    </details>
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Choice-of-Hyperparameters">Choice of Hyperparameters<a class="anchor-link" href="#Choice-of-Hyperparameters"> </a></h3><ul>
+<h3 id="Choice-of-Hyperparameters">
+<a class="anchor" href="#Choice-of-Hyperparameters" aria-hidden="true"><span class="octicon octicon-link"></span></a>Choice of Hyperparameters<a class="anchor-link" href="#Choice-of-Hyperparameters"> </a>
+</h3>
+<ul>
 <li>The architecture of the generator consists of 5 deconv layers. The final deconv layer is followed by a tanh non-linearity and scaling by epsillon (10)</li>
 </ul>
 
@@ -816,22 +981,22 @@ Dataset is Setup Correctly
 <span class="c1"># latent_dim = 10</span>
 <span class="n">img_h</span><span class="p">,</span><span class="n">img_w</span><span class="p">,</span><span class="n">img_c</span><span class="o">=</span><span class="p">(</span><span class="mi">224</span><span class="p">,</span><span class="mi">224</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
 <span class="n">latent_dim</span><span class="o">=</span><span class="mi">10</span>
-<span class="n">arch</span><span class="o">=</span><span class="s1">&#39;resnet50&#39;</span>
-<span class="n">archs</span><span class="o">=</span><span class="n">model_dict</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span> <span class="c1"># [&#39;vgg-f&#39;,&#39;vgg16&#39;,&#39;vgg19&#39;,&#39;googlenet&#39;,&#39;resnet50&#39;,&#39;resnet152&#39;] </span>
+<span class="n">arch</span><span class="o">=</span><span class="s1">'resnet50'</span>
+<span class="n">archs</span><span class="o">=</span><span class="n">model_dict</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span> <span class="c1"># ['vgg-f','vgg16','vgg19','googlenet','resnet50','resnet152'] </span>
 
 <span class="k">def</span> <span class="nf">get_bs</span><span class="p">(</span><span class="n">arch</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">torch</span><span class="o">.</span><span class="n">cuda</span><span class="o">.</span><span class="n">is_available</span><span class="p">():</span>
 <span class="c1">#         GPU_BENCHMARK= 8192.0</span>
 <span class="c1">#         GPU_MAX_MEM = torch.cuda.get_device_properties(device).total_memory / (1024*1024)</span>
 <span class="c1">#         BS_DIV= GPU_BENCHMARK/GPU_MAX_MEM</span>
-<span class="c1">#         print(f&quot;Current GPU MAX Size : {GPU_MAX_MEM}. {BS_DIV}&quot;)</span>
+<span class="c1">#         print(f"Current GPU MAX Size : {GPU_MAX_MEM}. {BS_DIV}")</span>
 
-        <span class="k">if</span> <span class="n">arch</span>  <span class="ow">not</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;resnet50&#39;</span><span class="p">,</span><span class="s1">&#39;resnet152&#39;</span><span class="p">]:</span><span class="c1">#  [&#39;vgg16&#39;,&#39;vgg19&#39;,&#39;vgg-f&#39;,&#39;googlenet&#39;]:</span>
+        <span class="k">if</span> <span class="n">arch</span>  <span class="ow">not</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">'resnet50'</span><span class="p">,</span><span class="s1">'resnet152'</span><span class="p">]:</span><span class="c1">#  ['vgg16','vgg19','vgg-f','googlenet']:</span>
             <span class="n">bs</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="mi">64</span><span class="p">)</span>
-        <span class="k">elif</span> <span class="n">arch</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;resnet50&#39;</span><span class="p">,</span><span class="s1">&#39;resnet152&#39;</span><span class="p">]:</span>
+        <span class="k">elif</span> <span class="n">arch</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">'resnet50'</span><span class="p">,</span><span class="s1">'resnet152'</span><span class="p">]:</span>
             <span class="n">bs</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="mi">32</span><span class="p">)</span>
         <span class="k">else</span><span class="p">:</span>
-            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Architecture type not supported. Please choose one from the following </span><span class="si">{</span><span class="n">archs</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Architecture type not supported. Please choose one from the following </span><span class="si">{</span><span class="n">archs</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="n">bs</span><span class="o">=</span><span class="mi">8</span> <span class="c1"># OOM Error</span>
     <span class="k">return</span> <span class="n">bs</span>
@@ -1071,41 +1236,48 @@ Dataset is Setup Correctly
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Other-Utils">Other Utils<a class="anchor-link" href="#Other-Utils"> </a></h3>
+<h3 id="Other-Utils">
+<a class="anchor" href="#Other-Utils" aria-hidden="true"><span class="octicon octicon-link"></span></a>Other Utils<a class="anchor-link" href="#Other-Utils"> </a>
+</h3>
 </div>
 </div>
 </div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p></p>
 <div class="input">
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">save_checkpoint</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">to_save</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="s1">&#39;checkpoint.pth&#39;</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;Save checkpoint if a new best is achieved&quot;&quot;&quot;</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#collapse-hide</span>
+<span class="k">def</span> <span class="nf">save_checkpoint</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">to_save</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="s1">'checkpoint.pth'</span><span class="p">):</span>
+    <span class="sd">"""Save checkpoint if a new best is achieved"""</span>
     <span class="k">if</span> <span class="n">to_save</span><span class="p">:</span>
-        <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;=&gt; Saving a new best&quot;</span><span class="p">)</span>
+        <span class="nb">print</span> <span class="p">(</span><span class="s2">"=&gt; Saving a new best"</span><span class="p">)</span>
         <span class="n">torch</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">state_dict</span><span class="p">(),</span> <span class="n">filename</span><span class="p">)</span>  <span class="c1"># save checkpoint</span>
     <span class="k">else</span><span class="p">:</span>
-        <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;=&gt; Validation Accuracy did not improve&quot;</span><span class="p">)</span>
+        <span class="nb">print</span> <span class="p">(</span><span class="s2">"=&gt; Validation Accuracy did not improve"</span><span class="p">)</span>
         
 <span class="k">def</span> <span class="nf">save_perturbations</span><span class="p">(</span><span class="n">noise</span><span class="p">,</span><span class="n">arch</span><span class="p">,</span><span class="n">epoch</span><span class="p">,</span><span class="n">wabdb_flag</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
-    <span class="n">rand_str</span><span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">string</span><span class="o">.</span><span class="n">ascii_letters</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">))</span>
-    <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">arch</span><span class="si">}</span><span class="s2">-</span><span class="si">{</span><span class="n">rand_str</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span><span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">rand_str</span><span class="o">=</span> <span class="s1">''</span><span class="o">.</span><span class="n">join</span><span class="p">(</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">string</span><span class="o">.</span><span class="n">ascii_letters</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">))</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">arch</span><span class="si">}</span><span class="s2">-</span><span class="si">{</span><span class="n">rand_str</span><span class="si">}</span><span class="s2">"</span><span class="p">,</span><span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
     
 
     
     <span class="n">perturbations</span><span class="o">=</span><span class="n">noise</span><span class="o">.</span><span class="n">permute</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">cpu</span><span class="p">()</span><span class="o">.</span><span class="n">detach</span><span class="p">()</span><span class="o">.</span><span class="n">numpy</span><span class="p">()</span><span class="o">*</span><span class="mi">255</span>
-    <span class="n">np</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">arch</span><span class="si">}</span><span class="s1">-</span><span class="si">{</span><span class="n">rand_str</span><span class="si">}</span><span class="s1">/Perturbations_</span><span class="si">{</span><span class="n">arch</span><span class="si">}</span><span class="s1">_</span><span class="si">{</span><span class="n">epoch</span><span class="si">}</span><span class="s1">.npy&#39;</span><span class="p">,</span> <span class="n">perturbations</span><span class="p">)</span>
+    <span class="n">np</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="sa">f</span><span class="s1">'</span><span class="si">{</span><span class="n">arch</span><span class="si">}</span><span class="s1">-</span><span class="si">{</span><span class="n">rand_str</span><span class="si">}</span><span class="s1">/Perturbations_</span><span class="si">{</span><span class="n">arch</span><span class="si">}</span><span class="s1">_</span><span class="si">{</span><span class="n">epoch</span><span class="si">}</span><span class="s1">.npy'</span><span class="p">,</span> <span class="n">perturbations</span><span class="p">)</span>
     <span class="k">for</span> <span class="n">perturb_idx</span><span class="p">,</span><span class="n">perturbation</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">perturbations</span><span class="p">[:,]):</span>
         
         <span class="n">im</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">fromarray</span><span class="p">(</span><span class="n">perturbation</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">uint8</span><span class="p">))</span>
         <span class="k">if</span> <span class="n">wabdb_flag</span><span class="p">:</span>
-            <span class="n">wandb</span><span class="o">.</span><span class="n">log</span><span class="p">({</span><span class="s2">&quot;noise&quot;</span><span class="p">:</span> <span class="p">[</span><span class="n">wandb</span><span class="o">.</span><span class="n">Image</span><span class="p">(</span><span class="n">im</span><span class="p">,</span> <span class="n">caption</span><span class="o">=</span><span class="sa">f</span><span class="s2">&quot;Noise_</span><span class="si">{</span><span class="n">arch</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">epoch</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">perturb_idx</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)]})</span>
-        <span class="n">im</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">arch</span><span class="si">}</span><span class="s1">-</span><span class="si">{</span><span class="n">rand_str</span><span class="si">}</span><span class="s1">/Perturbations_</span><span class="si">{</span><span class="n">arch</span><span class="si">}</span><span class="s1">_</span><span class="si">{</span><span class="n">epoch</span><span class="si">}</span><span class="s1">_</span><span class="si">{</span><span class="n">perturb_idx</span><span class="si">}</span><span class="s1">.png&#39;</span><span class="p">)</span>        
+            <span class="n">wandb</span><span class="o">.</span><span class="n">log</span><span class="p">({</span><span class="s2">"noise"</span><span class="p">:</span> <span class="p">[</span><span class="n">wandb</span><span class="o">.</span><span class="n">Image</span><span class="p">(</span><span class="n">im</span><span class="p">,</span> <span class="n">caption</span><span class="o">=</span><span class="sa">f</span><span class="s2">"Noise_</span><span class="si">{</span><span class="n">arch</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">epoch</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">perturb_idx</span><span class="si">}</span><span class="s2">"</span><span class="p">)]})</span>
+        <span class="n">im</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="sa">f</span><span class="s1">'</span><span class="si">{</span><span class="n">arch</span><span class="si">}</span><span class="s1">-</span><span class="si">{</span><span class="n">rand_str</span><span class="si">}</span><span class="s1">/Perturbations_</span><span class="si">{</span><span class="n">arch</span><span class="si">}</span><span class="s1">_</span><span class="si">{</span><span class="n">epoch</span><span class="si">}</span><span class="s1">_</span><span class="si">{</span><span class="n">perturb_idx</span><span class="si">}</span><span class="s1">.png'</span><span class="p">)</span>        
 
 <span class="c1"># TODO </span>
 <span class="k">def</span> <span class="nf">visualize_perturbations</span><span class="p">():</span>
@@ -1127,33 +1299,41 @@ Dataset is Setup Correctly
 </div>
 </div>
 
+    </details>
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Validating-Model-Utils">Validating Model Utils<a class="anchor-link" href="#Validating-Model-Utils"> </a></h4>
+<h4 id="Validating-Model-Utils">
+<a class="anchor" href="#Validating-Model-Utils" aria-hidden="true"><span class="octicon octicon-link"></span></a>Validating Model Utils<a class="anchor-link" href="#Validating-Model-Utils"> </a>
+</h4>
 </div>
 </div>
 </div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p></p>
 <div class="input">
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># val_iterations = val_num/bs</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#collapse-hide</span>
+<span class="c1"># val_iterations = val_num/bs</span>
 
 <span class="k">def</span> <span class="nf">compute_fooling_rate</span><span class="p">(</span><span class="n">prob_adv</span><span class="p">,</span><span class="n">prob_real</span><span class="p">):</span>
-    <span class="sd">&#39;&#39;&#39;Helper function to calculate mismatches in the top index vector</span>
+    <span class="sd">'''Helper function to calculate mismatches in the top index vector</span>
 <span class="sd">     for clean and adversarial batch</span>
 <span class="sd">     Parameters:</span>
 <span class="sd">     prob_adv : Index vector for adversarial batch</span>
 <span class="sd">     prob_real : Index vector for clean batch</span>
 <span class="sd">     Returns:</span>
 <span class="sd">     Number of mismatch and its percentage</span>
-<span class="sd">    &#39;&#39;&#39;</span>
+<span class="sd">    '''</span>
     <span class="n">nfool</span><span class="o">=</span><span class="mi">0</span>
     <span class="n">size</span> <span class="o">=</span> <span class="n">prob_real</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">size</span><span class="p">):</span>
@@ -1165,8 +1345,8 @@ Dataset is Setup Correctly
 <span class="k">def</span> <span class="nf">validate_generator_old</span><span class="p">(</span><span class="n">noise</span><span class="p">,</span><span class="n">val_dl</span><span class="p">,</span><span class="n">val_iterations</span><span class="o">=</span><span class="mi">10</span><span class="p">):</span>
     
     <span class="n">total_fool</span><span class="o">=</span><span class="mi">0</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;############### VALIDATION PHASE STARTED ################&quot;</span><span class="p">)</span>
-    <span class="n">train_log</span><span class="o">.</span><span class="n">writelines</span><span class="p">(</span><span class="s2">&quot;############### VALIDATION PHASE STARTED ################&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"############### VALIDATION PHASE STARTED ################"</span><span class="p">)</span>
+    <span class="n">train_log</span><span class="o">.</span><span class="n">writelines</span><span class="p">(</span><span class="s2">"############### VALIDATION PHASE STARTED ################"</span><span class="p">)</span>
     
     <span class="k">for</span> <span class="n">val_idx</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">val_iterations</span><span class="p">):</span>
         <span class="k">for</span> <span class="n">batch_idx</span><span class="p">,</span> <span class="n">data</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">val_dl</span><span class="p">):</span>
@@ -1180,8 +1360,8 @@ Dataset is Setup Correctly
     
     
     <span class="n">fool_rate</span> <span class="o">=</span> <span class="mi">100</span><span class="o">*</span><span class="nb">float</span><span class="p">(</span><span class="n">total_fool</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">val_iterations</span><span class="o">*</span><span class="n">batch_size</span><span class="p">)</span>       
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Fooling rate: </span><span class="si">{</span><span class="n">foolr</span><span class="si">}</span><span class="s2">. Total Items Fooled :</span><span class="si">{</span><span class="n">total_fool</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-    <span class="n">train_log</span><span class="o">.</span><span class="n">writelines</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Fooling rate: </span><span class="si">{</span><span class="n">foolr</span><span class="si">}</span><span class="s2">. Total Items Fooled :</span><span class="si">{</span><span class="n">total_fool</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Fooling rate: </span><span class="si">{</span><span class="n">foolr</span><span class="si">}</span><span class="s2">. Total Items Fooled :</span><span class="si">{</span><span class="n">total_fool</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+    <span class="n">train_log</span><span class="o">.</span><span class="n">writelines</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Fooling rate: </span><span class="si">{</span><span class="n">foolr</span><span class="si">}</span><span class="s2">. Total Items Fooled :</span><span class="si">{</span><span class="n">total_fool</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 
     
     
@@ -1207,52 +1387,42 @@ Dataset is Setup Correctly
 </div>
 </div>
 
+    </details>
 </div>
     
 
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
+<div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## Test  Fooling Objective</span>
-<span class="n">adv</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1000</span><span class="p">,(</span><span class="mi">32</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span>
-<span class="n">real</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1000</span><span class="p">,(</span><span class="mi">32</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-    
-
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Setup-Wandb">Setup Wandb<a class="anchor-link" href="#Setup-Wandb"> </a></h4>
+<h4 id="Setup-Wandb">
+<a class="anchor" href="#Setup-Wandb" aria-hidden="true"><span class="octicon octicon-link"></span></a>Setup Wandb<a class="anchor-link" href="#Setup-Wandb"> </a>
+</h4>
 </div>
 </div>
 </div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p></p>
 <div class="input">
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Setup Wandb </span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#collapse-hide</span>
+<span class="c1"># Setup Wandb </span>
 
 <span class="kn">import</span> <span class="nn">wandb</span>
 <span class="n">wandb</span><span class="o">.</span><span class="n">login</span><span class="p">()</span>
-<span class="n">wandb</span><span class="o">.</span><span class="n">init</span><span class="p">(</span><span class="n">project</span><span class="o">=</span><span class="s2">&quot;NAG_Pytorch&quot;</span><span class="p">)</span>
+<span class="n">wandb</span><span class="o">.</span><span class="n">init</span><span class="p">(</span><span class="n">project</span><span class="o">=</span><span class="s2">"NAG_Pytorch"</span><span class="p">)</span>
 </pre></div>
 
     </div>
 </div>
 </div>
 
+    </details>
 <div class="output_wrapper">
 <div class="output">
 
@@ -1261,9 +1431,9 @@ Dataset is Setup Correctly
 
 <div class="output_html rendered_html output_subarea ">
 
-                Logging results to <a href="https://wandb.com" target="_blank">Weights &amp; Biases</a> <a href="https://docs.wandb.com/integrations/jupyter.html" target="_blank">(Documentation)</a>.<br />
-                Project page: <a href="https://app.wandb.ai/gokkulnath/NAG_Pytorch" target="_blank">https://app.wandb.ai/gokkulnath/NAG_Pytorch</a><br />
-                Run page: <a href="https://app.wandb.ai/gokkulnath/NAG_Pytorch/runs/hm0t7y9w" target="_blank">https://app.wandb.ai/gokkulnath/NAG_Pytorch/runs/hm0t7y9w</a><br />
+                Logging results to <a href="https://wandb.com" target="_blank">Weights &amp; Biases</a> <a href="https://docs.wandb.com/integrations/jupyter.html" target="_blank">(Documentation)</a>.<br>
+                Project page: <a href="https://app.wandb.ai/gokkulnath/NAG_Pytorch" target="_blank">https://app.wandb.ai/gokkulnath/NAG_Pytorch</a><br>
+                Run page: <a href="https://app.wandb.ai/gokkulnath/NAG_Pytorch/runs/hm0t7y9w" target="_blank">https://app.wandb.ai/gokkulnath/NAG_Pytorch/runs/hm0t7y9w</a><br>
             
 </div>
 
@@ -1285,9 +1455,12 @@ Dataset is Setup Correctly
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Fit-and-Train-the-Generator">Fit and Train the Generator<a class="anchor-link" href="#Fit-and-Train-the-Generator"> </a></h2>
+<h2 id="Fit-and-Train-the-Generator">
+<a class="anchor" href="#Fit-and-Train-the-Generator" aria-hidden="true"><span class="octicon octicon-link"></span></a>Fit and Train the Generator<a class="anchor-link" href="#Fit-and-Train-the-Generator"> </a>
+</h2>
 </div>
 </div>
 </div>
@@ -1303,13 +1476,13 @@ Dataset is Setup Correctly
     <span class="n">train_dl</span><span class="p">,</span><span class="n">val_dl</span> <span class="o">=</span> <span class="n">dls</span>
     <span class="n">D_model</span><span class="o">=</span><span class="n">D_model</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">device</span><span class="p">)</span>
     <span class="n">D_model</span><span class="o">.</span><span class="n">eval</span><span class="p">()</span>
-    <span class="n">timestamp</span><span class="o">=</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%d</span><span class="s2">%b%Y_%H_%M&quot;</span><span class="p">)</span>
-    <span class="n">train_log</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;train_log_</span><span class="si">{</span><span class="n">arch</span><span class="si">}</span><span class="s1">_</span><span class="si">{</span><span class="n">timestamp</span><span class="si">}</span><span class="s1">.txt&#39;</span><span class="p">,</span><span class="s1">&#39;w&#39;</span><span class="p">)</span>
+    <span class="n">timestamp</span><span class="o">=</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">"</span><span class="si">%d</span><span class="s2">%b%Y_%H_%M"</span><span class="p">)</span>
+    <span class="n">train_log</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="sa">f</span><span class="s1">'train_log_</span><span class="si">{</span><span class="n">arch</span><span class="si">}</span><span class="s1">_</span><span class="si">{</span><span class="n">timestamp</span><span class="si">}</span><span class="s1">.txt'</span><span class="p">,</span><span class="s1">'w'</span><span class="p">)</span>
     <span class="k">for</span> <span class="n">epoch</span> <span class="ow">in</span> <span class="n">tqdm</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="n">nb_epochs</span><span class="p">),</span><span class="n">total</span><span class="o">=</span><span class="n">nb_epochs</span><span class="p">):</span>
         <span class="n">running_loss</span><span class="o">=</span><span class="mi">0</span>
-        <span class="n">rand_str</span><span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">string</span><span class="o">.</span><span class="n">ascii_letters</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">))</span>
+        <span class="n">rand_str</span><span class="o">=</span> <span class="s1">''</span><span class="o">.</span><span class="n">join</span><span class="p">(</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">string</span><span class="o">.</span><span class="n">ascii_letters</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">))</span>
         
-        <span class="n">train_log</span><span class="o">.</span><span class="n">writelines</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;############### TRAIN PHASE STARTED : </span><span class="si">{</span><span class="n">epoch</span><span class="si">}</span><span class="s2">################&quot;</span><span class="p">)</span>
+        <span class="n">train_log</span><span class="o">.</span><span class="n">writelines</span><span class="p">(</span><span class="sa">f</span><span class="s2">"############### TRAIN PHASE STARTED : </span><span class="si">{</span><span class="n">epoch</span><span class="si">}</span><span class="s2">################"</span><span class="p">)</span>
         <span class="k">for</span> <span class="n">batch_idx</span><span class="p">,</span> <span class="n">data</span> <span class="ow">in</span> <span class="n">tqdm</span><span class="p">(</span><span class="nb">enumerate</span><span class="p">(</span><span class="n">train_dl</span><span class="p">),</span><span class="n">total</span> <span class="o">=</span> <span class="n">train_num</span><span class="o">//</span><span class="n">train_dl</span><span class="o">.</span><span class="n">batch_size</span><span class="p">):</span>
             <span class="c1"># Move Data and Labels to device(GPU)</span>
             <span class="n">images</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">device</span><span class="p">)</span>
@@ -1329,7 +1502,7 @@ Dataset is Setup Correctly
             <span class="c1">#XA = images+noise</span>
             <span class="c1">#preds_XA = f(images + noise)</span>
             <span class="n">prob_vec_no_shuffle</span> <span class="o">=</span> <span class="n">D_model</span><span class="p">(</span><span class="n">images</span> <span class="o">+</span> <span class="n">noise</span><span class="p">)</span>  
-            <span class="n">qc_</span> <span class="o">=</span>  <span class="n">F</span><span class="o">.</span><span class="n">softmax</span><span class="p">(</span><span class="n">prob_vec_no_shuffle</span><span class="p">,</span><span class="n">dim</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">gather</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">clean_idx</span><span class="p">)</span> <span class="c1"># Variable q&#39;c</span>
+            <span class="n">qc_</span> <span class="o">=</span>  <span class="n">F</span><span class="o">.</span><span class="n">softmax</span><span class="p">(</span><span class="n">prob_vec_no_shuffle</span><span class="p">,</span><span class="n">dim</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">gather</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">clean_idx</span><span class="p">)</span> <span class="c1"># Variable q'c</span>
 
             <span class="c1"># 1. fooling_objective: encourages G to generate perturbations that decrease confidence of benign predictions</span>
             <span class="n">fool_obj</span><span class="p">,</span> <span class="n">mean_qc_</span> <span class="o">=</span> <span class="n">fooling_objective</span><span class="p">(</span><span class="n">qc_</span><span class="p">)</span>
@@ -1351,25 +1524,25 @@ Dataset is Setup Correctly
 <span class="c1">#             perturbations=noise.permute(0,2,3,1).cpu().detach().numpy()*255</span>
 <span class="c1">#             for perturb_idx,perturbation in enumerate(perturbations[:,]):</span>
 <span class="c1">#                 im = Image.fromarray(perturbation.astype(np.uint8))</span>
-<span class="c1">#                 wandb.log({&quot;noise&quot;: [wandb.Image(im, caption=f&quot;Noise_{arch}_{epoch}_{perturb_idx}&quot;)]})</span>
-            <span class="n">wandb</span><span class="o">.</span><span class="n">log</span><span class="p">({</span><span class="s2">&quot;fool_obj&quot;</span><span class="p">:</span> <span class="n">fool_obj</span><span class="o">.</span><span class="n">item</span><span class="p">(),</span>
-                       <span class="s2">&quot;divesity_obj&quot;</span><span class="p">:</span> <span class="n">divesity_obj</span><span class="o">.</span><span class="n">item</span><span class="p">(),</span>
-                       <span class="s2">&quot;total_loss&quot;</span><span class="p">:</span><span class="n">total_loss</span><span class="o">.</span><span class="n">item</span><span class="p">(),</span>
+<span class="c1">#                 wandb.log({"noise": [wandb.Image(im, caption=f"Noise_{arch}_{epoch}_{perturb_idx}")]})</span>
+            <span class="n">wandb</span><span class="o">.</span><span class="n">log</span><span class="p">({</span><span class="s2">"fool_obj"</span><span class="p">:</span> <span class="n">fool_obj</span><span class="o">.</span><span class="n">item</span><span class="p">(),</span>
+                       <span class="s2">"divesity_obj"</span><span class="p">:</span> <span class="n">divesity_obj</span><span class="o">.</span><span class="n">item</span><span class="p">(),</span>
+                       <span class="s2">"total_loss"</span><span class="p">:</span><span class="n">total_loss</span><span class="o">.</span><span class="n">item</span><span class="p">(),</span>
                       <span class="p">})</span>        
             
             <span class="n">running_loss</span> <span class="o">+=</span> <span class="n">total_loss</span><span class="o">.</span><span class="n">item</span><span class="p">()</span>
             
             <span class="k">if</span> <span class="n">batch_idx</span><span class="o">!=</span><span class="mi">0</span>  <span class="ow">and</span> <span class="n">batch_idx</span> <span class="o">%</span> <span class="mi">100</span> <span class="o">==</span><span class="mi">0</span> <span class="p">:</span>
-                <span class="n">train_log</span><span class="o">.</span><span class="n">writelines</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;############### VALIDATION PHASE STARTED : </span><span class="si">{</span><span class="n">epoch</span><span class="si">}</span><span class="s2">, Step : </span><span class="si">{</span><span class="nb">int</span><span class="p">(</span><span class="n">batch_idx</span> <span class="o">/</span> <span class="mi">100</span><span class="p">)</span><span class="si">}</span><span class="s2"> ################&quot;</span><span class="p">)</span>
+                <span class="n">train_log</span><span class="o">.</span><span class="n">writelines</span><span class="p">(</span><span class="sa">f</span><span class="s2">"############### VALIDATION PHASE STARTED : </span><span class="si">{</span><span class="n">epoch</span><span class="si">}</span><span class="s2">, Step : </span><span class="si">{</span><span class="nb">int</span><span class="p">(</span><span class="n">batch_idx</span> <span class="o">/</span> <span class="mi">100</span><span class="p">)</span><span class="si">}</span><span class="s2"> ################"</span><span class="p">)</span>
                 <span class="n">fool_rate</span><span class="p">,</span><span class="n">total_fool</span><span class="o">=</span> <span class="n">validate_generator</span><span class="p">(</span><span class="n">noise</span><span class="p">,</span><span class="n">D_model</span><span class="p">,</span><span class="n">val_dl</span><span class="p">)</span>
-                <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Fooling rate: </span><span class="si">{</span><span class="n">fool_rate</span><span class="si">}</span><span class="s2">. Total Items Fooled :</span><span class="si">{</span><span class="n">total_fool</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-                <span class="n">train_log</span><span class="o">.</span><span class="n">writelines</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Fooling rate: </span><span class="si">{</span><span class="n">fool_rate</span><span class="si">}</span><span class="s2">. Total Items Fooled :</span><span class="si">{</span><span class="n">total_fool</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Diversity Loss :</span><span class="si">{</span><span class="n">divesity_obj</span><span class="o">.</span><span class="n">item</span><span class="p">()</span><span class="si">}</span><span class="s2"> </span><span class="se">\n</span><span class="s2"> Fooling Loss: </span><span class="si">{</span><span class="n">fool_obj</span><span class="o">.</span><span class="n">item</span><span class="p">()</span><span class="si">}</span><span class="s2"> </span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
-        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Total Loss after Epoch No: </span><span class="si">{</span><span class="n">epoch</span> <span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2"> - </span><span class="si">{</span><span class="n">running_loss</span><span class="o">/</span><span class="p">(</span><span class="n">train_num</span><span class="o">//</span><span class="n">train_dl</span><span class="o">.</span><span class="n">batch_size</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-        <span class="n">train_log</span><span class="o">.</span><span class="n">writelines</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Loss after Epoch No: </span><span class="si">{</span><span class="n">epoch</span> <span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2"> is </span><span class="si">{</span><span class="n">running_loss</span><span class="o">/</span><span class="p">(</span><span class="n">train_num</span><span class="o">//</span><span class="n">train_dl</span><span class="o">.</span><span class="n">batch_size</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+                <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Fooling rate: </span><span class="si">{</span><span class="n">fool_rate</span><span class="si">}</span><span class="s2">. Total Items Fooled :</span><span class="si">{</span><span class="n">total_fool</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+                <span class="n">train_log</span><span class="o">.</span><span class="n">writelines</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Fooling rate: </span><span class="si">{</span><span class="n">fool_rate</span><span class="si">}</span><span class="s2">. Total Items Fooled :</span><span class="si">{</span><span class="n">total_fool</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Diversity Loss :</span><span class="si">{</span><span class="n">divesity_obj</span><span class="o">.</span><span class="n">item</span><span class="p">()</span><span class="si">}</span><span class="s2"> </span><span class="se">\n</span><span class="s2"> Fooling Loss: </span><span class="si">{</span><span class="n">fool_obj</span><span class="o">.</span><span class="n">item</span><span class="p">()</span><span class="si">}</span><span class="s2"> </span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Total Loss after Epoch No: </span><span class="si">{</span><span class="n">epoch</span> <span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2"> - </span><span class="si">{</span><span class="n">running_loss</span><span class="o">/</span><span class="p">(</span><span class="n">train_num</span><span class="o">//</span><span class="n">train_dl</span><span class="o">.</span><span class="n">batch_size</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+        <span class="n">train_log</span><span class="o">.</span><span class="n">writelines</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Loss after Epoch No: </span><span class="si">{</span><span class="n">epoch</span> <span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2"> is </span><span class="si">{</span><span class="n">running_loss</span><span class="o">/</span><span class="p">(</span><span class="n">train_num</span><span class="o">//</span><span class="n">train_dl</span><span class="o">.</span><span class="n">batch_size</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
         <span class="c1"># to_save can be any expression/condition that returns a bool</span>
         
-        <span class="n">save_checkpoint</span><span class="p">(</span><span class="n">adversarygen</span><span class="p">,</span> <span class="n">to_save</span><span class="o">=</span> <span class="kc">True</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="sa">f</span><span class="s1">&#39;GeneratorW_</span><span class="si">{</span><span class="n">arch</span><span class="si">}</span><span class="s1">_</span><span class="si">{</span><span class="n">epoch</span><span class="si">}</span><span class="s1">_</span><span class="si">{</span><span class="n">rand_str</span><span class="si">}</span><span class="s1">.pth&#39;</span><span class="p">)</span> 
+        <span class="n">save_checkpoint</span><span class="p">(</span><span class="n">adversarygen</span><span class="p">,</span> <span class="n">to_save</span><span class="o">=</span> <span class="kc">True</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="sa">f</span><span class="s1">'GeneratorW_</span><span class="si">{</span><span class="n">arch</span><span class="si">}</span><span class="s1">_</span><span class="si">{</span><span class="n">epoch</span><span class="si">}</span><span class="s1">_</span><span class="si">{</span><span class="n">rand_str</span><span class="si">}</span><span class="s1">.pth'</span><span class="p">)</span> 
         <span class="k">if</span> <span class="n">epoch</span> <span class="o">%</span> <span class="mi">1</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
 <span class="c1">#             save_perturbations(noise,arch,epoch)</span>
             <span class="n">save_perturbations</span><span class="p">(</span><span class="n">noise</span><span class="p">,</span><span class="n">arch</span><span class="p">,</span><span class="n">epoch</span><span class="p">,</span><span class="n">wabdb_flag</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -1383,9 +1556,12 @@ Dataset is Setup Correctly
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Start-Actual-Trainning">Start Actual Trainning<a class="anchor-link" href="#Start-Actual-Trainning"> </a></h1>
+<h1 id="Start-Actual-Trainning">
+<a class="anchor" href="#Start-Actual-Trainning" aria-hidden="true"><span class="octicon octicon-link"></span></a>Start Actual Trainning<a class="anchor-link" href="#Start-Actual-Trainning"> </a>
+</h1>
 </div>
 </div>
 </div>
@@ -1401,9 +1577,9 @@ Dataset is Setup Correctly
 <span class="c1"># Setting up Dataloaders</span>
 <span class="kn">import</span> <span class="nn">time</span><span class="o">,</span><span class="nn">gc</span>
 
-<span class="n">arch</span><span class="o">=</span><span class="s1">&#39;resnet50&#39;</span>
+<span class="n">arch</span><span class="o">=</span><span class="s1">'resnet50'</span>
 <span class="n">start</span><span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Training Generator for Arch </span><span class="si">{</span><span class="n">arch</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Training Generator for Arch </span><span class="si">{</span><span class="n">arch</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 <span class="n">model</span><span class="o">=</span> <span class="n">model_dict</span><span class="p">[</span><span class="n">arch</span><span class="p">](</span><span class="n">pretrained</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">bs</span> <span class="o">=</span> <span class="n">get_bs</span><span class="p">(</span><span class="n">arch</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">bs</span><span class="p">)</span>
@@ -1412,7 +1588,7 @@ Dataset is Setup Correctly
 <span class="n">dls</span> <span class="o">=</span> <span class="p">[</span><span class="n">train_dl</span><span class="p">,</span><span class="n">val_dl</span><span class="p">]</span>
 <span class="n">optimizer</span> <span class="o">=</span> <span class="n">optim</span><span class="o">.</span><span class="n">Adam</span><span class="p">(</span><span class="n">adversarygen</span><span class="o">.</span><span class="n">parameters</span><span class="p">(),</span> <span class="n">lr</span><span class="o">=</span><span class="n">lr</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Elsasped Time </span><span class="si">{</span><span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span><span class="o">-</span><span class="n">start</span><span class="si">}</span><span class="s2"> Seconds&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Elsasped Time </span><span class="si">{</span><span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span><span class="o">-</span><span class="n">start</span><span class="si">}</span><span class="s2"> Seconds"</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -1441,17 +1617,22 @@ Elsasped Time 0.6291134357452393 Seconds
     
     
 <div class="cell border-box-sizing code_cell rendered">
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p></p>
 <div class="input">
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">fit</span><span class="p">(</span><span class="n">nb_epochs</span><span class="o">=</span><span class="n">total_epochs</span><span class="p">,</span><span class="n">D_model</span><span class="o">=</span><span class="n">model</span><span class="p">,</span><span class="n">dls</span><span class="o">=</span><span class="n">dls</span><span class="p">,</span><span class="n">optimizer</span><span class="o">=</span><span class="n">optimizer</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#collapse-hide</span>
+<span class="n">fit</span><span class="p">(</span><span class="n">nb_epochs</span><span class="o">=</span><span class="n">total_epochs</span><span class="p">,</span><span class="n">D_model</span><span class="o">=</span><span class="n">model</span><span class="p">,</span><span class="n">dls</span><span class="o">=</span><span class="n">dls</span><span class="p">,</span><span class="n">optimizer</span><span class="o">=</span><span class="n">optimizer</span><span class="p">)</span>
 </pre></div>
 
     </div>
 </div>
 </div>
 
+    </details>
 <div class="output_wrapper">
 <div class="output">
 
@@ -1724,27 +1905,41 @@ Total Loss after Epoch No: 20 - 1.0392777105936637
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Misc:">Misc:<a class="anchor-link" href="#Misc:"> </a></h1>
+<h1 id="Misc:">
+<a class="anchor" href="#Misc:" aria-hidden="true"><span class="octicon octicon-link"></span></a>Misc:<a class="anchor-link" href="#Misc:"> </a>
+</h1>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h5 id="Setup-Caffenet-and-VGG-F--(TODO)">Setup Caffenet and VGG-F  (TODO)<a class="anchor-link" href="#Setup-Caffenet-and-VGG-F--(TODO)"> </a></h5>
+<h5 id="Setup-Caffenet-and-VGG-F--(TODO)">
+<a class="anchor" href="#Setup-Caffenet-and-VGG-F--(TODO)" aria-hidden="true"><span class="octicon octicon-link"></span></a>Setup Caffenet and VGG-F  (TODO)<a class="anchor-link" href="#Setup-Caffenet-and-VGG-F--(TODO)"> </a>
+</h5>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h5 id="Paper--:-http://www.robots.ox.ac.uk/~vgg/publications/2015/Parkhi15/parkhi15.pdf">Paper  : <a href="http://www.robots.ox.ac.uk/~vgg/publications/2015/Parkhi15/parkhi15.pdf">http://www.robots.ox.ac.uk/~vgg/publications/2015/Parkhi15/parkhi15.pdf</a><a class="anchor-link" href="#Paper--:-http://www.robots.ox.ac.uk/~vgg/publications/2015/Parkhi15/parkhi15.pdf"> </a></h5>
+<ul>
+<li>Paper  : <a href="http://www.robots.ox.ac.uk/~vgg/publications/2015/Parkhi15/parkhi15.pdf">http://www.robots.ox.ac.uk/~vgg/publications/2015/Parkhi15/parkhi15.pdf</a>
+</li>
+</ul>
+
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Run-the-below-code-first-before-loading-VGG-F">Run the below code first before loading VGG-F<a class="anchor-link" href="#Run-the-below-code-first-before-loading-VGG-F"> </a></h4>
+<h4 id="Run-the-below-code-first-before-loading-VGG-F">
+<a class="anchor" href="#Run-the-below-code-first-before-loading-VGG-F" aria-hidden="true"><span class="octicon octicon-link"></span></a>Run the below code first before loading VGG-F<a class="anchor-link" href="#Run-the-below-code-first-before-loading-VGG-F"> </a>
+</h4>
 </div>
 </div>
 </div>
@@ -1765,77 +1960,61 @@ Total Loss after Epoch No: 20 - 1.0392777105936637
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Loading-VGG-F">Loading VGG-F<a class="anchor-link" href="#Loading-VGG-F"> </a></h4>
+<h4 id="Loading-VGG-F">
+<a class="anchor" href="#Loading-VGG-F" aria-hidden="true"><span class="octicon octicon-link"></span></a>Loading VGG-F<a class="anchor-link" href="#Loading-VGG-F"> </a>
+</h4>
 </div>
 </div>
 </div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p></p>
 <div class="input">
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">torch</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#collapse-hide</span>
+
+<span class="kn">import</span> <span class="nn">torch</span>
 <span class="kn">from</span> <span class="nn">vgg</span> <span class="kn">import</span> <span class="n">VGG_F</span>
+
+<span class="n">model</span> <span class="o">=</span> <span class="n">vgg_f</span><span class="p">()</span>
+<span class="n">model</span><span class="o">.</span><span class="n">load_state_dict</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s1">'VGG_FACE.caffemodel.pt'</span><span class="p">))</span>
+<span class="n">model_dict</span><span class="p">[</span><span class="s1">'vgg-f'</span><span class="p">]</span> <span class="o">=</span>  <span class="n">model</span>
+
+<span class="n">model</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">rand</span><span class="p">((</span><span class="mi">3</span><span class="p">,</span><span class="mi">224</span><span class="p">,</span><span class="mi">224</span><span class="p">)))</span>
 </pre></div>
 
     </div>
 </div>
 </div>
 
+    </details>
 </div>
     
 
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
+<div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">model</span> <span class="o">=</span> <span class="n">vgg_f</span><span class="p">()</span>
-<span class="n">model</span><span class="o">.</span><span class="n">load_state_dict</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s1">&#39;VGG_FACE.caffemodel.pt&#39;</span><span class="p">))</span>
-<span class="n">model_dict</span><span class="p">[</span><span class="s1">&#39;vgg-f&#39;</span><span class="p">]</span> <span class="o">=</span>  <span class="n">model</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-    
-
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">model</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">rand</span><span class="p">((</span><span class="mi">3</span><span class="p">,</span><span class="mi">224</span><span class="p">,</span><span class="mi">224</span><span class="p">)))</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-    
-
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Downloading-Trained-Weights">Downloading Trained Weights<a class="anchor-link" href="#Downloading-Trained-Weights"> </a></h3>
+<h3 id="Downloading-Trained-Weights">
+<a class="anchor" href="#Downloading-Trained-Weights" aria-hidden="true"><span class="octicon octicon-link"></span></a>Downloading Trained Weights<a class="anchor-link" href="#Downloading-Trained-Weights"> </a>
+</h3>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li>Pretrained Generator Weigths for Googlenet, Resnet50, VGG16 and VGG19 Avalaible as a Kaggle Dataset</li>
-<li>Link : <a href="https://www.kaggle.com/gokkulnath/nag-pytorch-pretrained">https://www.kaggle.com/gokkulnath/nag-pytorch-pretrained</a></li>
+<li>Link : <a href="https://www.kaggle.com/gokkulnath/nag-pytorch-pretrained">https://www.kaggle.com/gokkulnath/nag-pytorch-pretrained</a>
+</li>
 </ul>
 
 </div>
@@ -1859,16 +2038,21 @@ Total Loss after Epoch No: 20 - 1.0392777105936637
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Evaluating-NAG-performance-across-Models:-(TODO)">Evaluating NAG performance across Models: (TODO)<a class="anchor-link" href="#Evaluating-NAG-performance-across-Models:-(TODO)"> </a></h3><ul>
+<h3 id="Evaluating-NAG-performance-across-Models:-(TODO)">
+<a class="anchor" href="#Evaluating-NAG-performance-across-Models:-(TODO)" aria-hidden="true"><span class="octicon octicon-link"></span></a>Evaluating NAG performance across Models: (TODO)<a class="anchor-link" href="#Evaluating-NAG-performance-across-Models:-(TODO)"> </a>
+</h3>
+<ul>
 <li>For Tabular Column Generation</li>
 </ul>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Steps to evaluate the perturbations generated by Generator Network (TODO)</p>
 
@@ -1885,26 +2069,42 @@ for modelarch, model in model_dict.items():
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Interpolating-Latent-Dimension-for-NAG">Interpolating Latent Dimension for NAG<a class="anchor-link" href="#Interpolating-Latent-Dimension-for-NAG"> </a></h3><p align="center">
-
-[![Interpolating Latent Dimension for NAG](https://img.youtube.com/vi/2lojORAu8vA/0.jpg)](https://www.youtube.com/watch?v=2lojORAu8vA&amp;feature=youtu.be)
+<h3 id="Interpolating-Latent-Dimension-for-NAG">
+<a class="anchor" href="#Interpolating-Latent-Dimension-for-NAG" aria-hidden="true"><span class="octicon octicon-link"></span></a>Interpolating Latent Dimension for NAG<a class="anchor-link" href="#Interpolating-Latent-Dimension-for-NAG"> </a>
+</h3>
+<p>
 </p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Obtained-Perturbations">Obtained Perturbations<a class="anchor-link" href="#Obtained-Perturbations"> </a></h1><p><img src="/adversarialwilderness/images/copied_from_nb/resources/Collage_perturbation.v1.png" alt="" /></p>
+<center>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/watch?v=2lojORAu8vA&amp;feature=youtu.be" frameborder="0" allowfullscreen=""></iframe>
+</center>
+
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="References:">References:<a class="anchor-link" href="#References:"> </a></h2><ul>
-<li>Official Code Repo : <a href="https://github.com/val-iisc/nag">https://github.com/val-iisc/nag</a></li>
+<h1 id="Obtained-Perturbations">
+<a class="anchor" href="#Obtained-Perturbations" aria-hidden="true"><span class="octicon octicon-link"></span></a>Obtained Perturbations<a class="anchor-link" href="#Obtained-Perturbations"> </a>
+</h1>
+<p><img src="/adversarialwilderness/images/copied_from_nb/resources/Collage_perturbation.v1.png" alt=""></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="References:">
+<a class="anchor" href="#References:" aria-hidden="true"><span class="octicon octicon-link"></span></a>References:<a class="anchor-link" href="#References:"> </a>
+</h2>
+<ul>
+<li>Official Code Repo : <a href="https://github.com/val-iisc/nag">https://github.com/val-iisc/nag</a>
+</li>
 <li>GAN Architecture : Pytorch Tutorial</li>
 <li><a href="https://pytorch.org/docs/stable/nn.html?highlight=convtranspose2d#torch.nn.ConvTranspose2d">Transpose Convolution Docs</a></li>
 </ul>
@@ -1916,7 +2116,15 @@ for modelarch, model in model_dict.items():
 
 
 
-  </div><a class="u-url" href="/adversarialwilderness/2020/04/02/Network-Adversary-Generation.html" hidden></a>
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="Gokkulnath/adversarialwilderness"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/adversarialwilderness/adversarial%20machine%20learning/2020/04/02/Network-Adversary-Generation.html" hidden></a>
 </article>
       </div>
     </main><footer class="site-footer h-card">
