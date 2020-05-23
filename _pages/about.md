@@ -4,14 +4,6 @@ title: About Me
 permalink: /about/
 ---
 
-<!-- This is where you put the contents of your *About* page. Like all your pages, it's in [Markdown](https://guides.github.com/features/mastering-markdown/) format.
-
-This website is powered by **[fastpages](https://github.com/fastai/fastpages)** [^1].
-
-
-
-[^1]:a blogging platform that natively supports Jupyter notebooks in addition to other formats. -->
-
 ![]({{site.baseurl}}/images/logo.png "https://gokkulnath.github.io/adversarialwilderness/about/")
 
 I am 23 years old. I was born in the city of [Madurai](https://en.wikipedia.org/wiki/Madurai) in India. I lived in [Coimbatore](https://en.wikipedia.org/wiki/Coimbatore) for four years while I was pursuing my undergraduate education.I have also lived in  Trichy, Vellore and Chennai during school days. Currently I stay in [Bengaluru](https://en.wikipedia.org/wiki/Bangalore), Karnataka. I completed my undergraduate education in Electronics and Communication Engineering from the [Amrita School of Engineering, Coimbatore](https://www.amrita.edu/campus/coimbatore) on May 2017.
