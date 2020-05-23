@@ -13,12 +13,14 @@ I currently work as a Software Test Engineer, Testing Virtual Network Functions(
 I am interested in Deep Learning and Computer Vision with specific focus on GANs, Adversarial Machine learning and Federated Learning. I am inclined towards working on projects that involve working on the intersection of these fields. I enjoy playing Table Tennis, Fixing Broken Electronics, Watching Movies and Programming.
 
 
-[![Linkedin](https://raw.githubusercontent.com/Gokkulnath/adversarialwilderness/master/images/logos/LinkedIn_Logo_2013.png)](https://www.linkedin.com/in/gokkulnathts/)
-<!-- &nbsp; -->
-[![GitHub](https://raw.githubusercontent.com/Gokkulnath/adversarialwilderness/master/images/logos/LinkedIn_Logo_2013.png)](https://github.com/Gokkulnath)
-<!-- &nbsp; -->
-[![Kaggle](https://upload.wikimedia.org/wikipedia/commons/7/7c/Kaggle_logo.png)](https://kaggle.com/gokkulnath)
-<!-- &nbsp; -->
-[![Twitter](https://raw.githubusercontent.com/Gokkulnath/adversarialwilderness/master/images/logos/Twitter_bird_logo_2012.png)](https://twitter.com/gokkulnath)
 
+<div>
+  <img src="https://raw.githubusercontent.com/Gokkulnath/adversarialwilderness/master/images/logos/LinkedIn_Logo_2013.png" href="https://www.linkedin.com/in/gokkulnathts/" width="60">
+
+  <img src="https://raw.githubusercontent.com/Gokkulnath/adversarialwilderness/master/images/logos/GitHub_logo_2013_padded.png"   href="https://github.com/Gokkulnath" width="60">
+  
+  <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Kaggle_logo.png" href="https://kaggle.com/gokkulnath" width="60">
+  
+  <img src="https://raw.githubusercontent.com/Gokkulnath/adversarialwilderness/master/images/logos/Twitter_bird_logo_2012.png"   href="https://twitter.com/gokkulnath" width="60">
+</div>
 
