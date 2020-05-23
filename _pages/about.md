@@ -13,10 +13,10 @@ I currently work as a Software Test Engineer, Testing Virtual Network Functions(
 I am interested in Deep Learning and Computer Vision with specific focus on GANs, Adversarial Machine learning and Federated Learning. I am inclined towards working on projects that involve working on the intersection of these fields. I enjoy playing Table Tennis, Fixing Broken Electronics, Watching Movies and Programming.
 
 
-[![Linkedin](http://i.imgur.com/0o48UoR.png) LinkedIn](https://www.linkedin.com/in/gokkulnathts/)
+[![Linkedin](https://en.wikipedia.org/wiki/LinkedIn#/media/File:LinkedIn_Logo_2013.svg)](https://www.linkedin.com/in/gokkulnathts/)
 <!-- &nbsp; -->
-[![GitHub](https://i.stack.imgur.com/tskMh.png) GitHub](https://github.com/Gokkulnath)
+[![GitHub](https://en.wikipedia.org/wiki/GitHub#/media/File:GitHub_logo_2013_padded.svg)](https://github.com/Gokkulnath)
 <!-- &nbsp; -->
-[![Kaggle](https://www.kaggle.com/static/images/site-logo.png)](https://kaggle.com/gokkulnath)
+[![Kaggle](https://upload.wikimedia.org/wikipedia/commons/7/7c/Kaggle_logo.png)](https://kaggle.com/gokkulnath)
 <!-- &nbsp; -->
-[![Twitter](http://i.imgur.com/tXSoThF.png) Twitter](https://twitter.com/gokkulnath)
+[![Twitter](https://en.wikipedia.org/wiki/Twitter#/media/File:Twitter_bird_logo_2012.svg)](https://twitter.com/gokkulnath)
