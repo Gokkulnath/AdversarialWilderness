@@ -9,14 +9,14 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="A Pytorch implementation of Network Adversary Generator CVPR 2018." />
 <meta property="og:description" content="A Pytorch implementation of Network Adversary Generator CVPR 2018." />
-<link rel="canonical" href="https://gokkulnath.github.io/adversarialwilderness/adversarial%20machine%20learning/2020/03/30/Network-Adversary-Generation.html" />
-<meta property="og:url" content="https://gokkulnath.github.io/adversarialwilderness/adversarial%20machine%20learning/2020/03/30/Network-Adversary-Generation.html" />
+<link rel="canonical" href="https://gokkulnath.github.io/adversarialwilderness/adversarial-machine-learning/2020/03/30/Network-Adversary-Generation.html" />
+<meta property="og:url" content="https://gokkulnath.github.io/adversarialwilderness/adversarial-machine-learning/2020/03/30/Network-Adversary-Generation.html" />
 <meta property="og:site_name" content="Adversarial Wilderness" />
 <meta property="og:image" content="https://gokkulnath.github.io/adversarialwilderness/images/notebook/nag/Collage_perturbation.v1.png" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-03-30T00:00:00-05:00" />
 <script type="application/ld+json">
-{"description":"A Pytorch implementation of Network Adversary Generator CVPR 2018.","headline":"Network Adversary Generator","dateModified":"2020-03-30T00:00:00-05:00","datePublished":"2020-03-30T00:00:00-05:00","@type":"BlogPosting","image":"https://gokkulnath.github.io/adversarialwilderness/images/notebook/nag/Collage_perturbation.v1.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://gokkulnath.github.io/adversarialwilderness/adversarial%20machine%20learning/2020/03/30/Network-Adversary-Generation.html"},"url":"https://gokkulnath.github.io/adversarialwilderness/adversarial%20machine%20learning/2020/03/30/Network-Adversary-Generation.html","@context":"https://schema.org"}</script>
+{"description":"A Pytorch implementation of Network Adversary Generator CVPR 2018.","headline":"Network Adversary Generator","dateModified":"2020-03-30T00:00:00-05:00","datePublished":"2020-03-30T00:00:00-05:00","@type":"BlogPosting","image":"https://gokkulnath.github.io/adversarialwilderness/images/notebook/nag/Collage_perturbation.v1.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://gokkulnath.github.io/adversarialwilderness/adversarial-machine-learning/2020/03/30/Network-Adversary-Generation.html"},"url":"https://gokkulnath.github.io/adversarialwilderness/adversarial-machine-learning/2020/03/30/Network-Adversary-Generation.html","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/adversarialwilderness/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://gokkulnath.github.io/adversarialwilderness/feed.xml" title="Adversarial Wilderness" /><!-- the google_analytics_id gets auto inserted from the config file -->
 
@@ -31,14 +31,14 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="A Pytorch implementation of Network Adversary Generator CVPR 2018." />
 <meta property="og:description" content="A Pytorch implementation of Network Adversary Generator CVPR 2018." />
-<link rel="canonical" href="https://gokkulnath.github.io/adversarialwilderness/adversarial%20machine%20learning/2020/03/30/Network-Adversary-Generation.html" />
-<meta property="og:url" content="https://gokkulnath.github.io/adversarialwilderness/adversarial%20machine%20learning/2020/03/30/Network-Adversary-Generation.html" />
+<link rel="canonical" href="https://gokkulnath.github.io/adversarialwilderness/adversarial-machine-learning/2020/03/30/Network-Adversary-Generation.html" />
+<meta property="og:url" content="https://gokkulnath.github.io/adversarialwilderness/adversarial-machine-learning/2020/03/30/Network-Adversary-Generation.html" />
 <meta property="og:site_name" content="Adversarial Wilderness" />
 <meta property="og:image" content="https://gokkulnath.github.io/adversarialwilderness/images/notebook/nag/Collage_perturbation.v1.png" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-03-30T00:00:00-05:00" />
 <script type="application/ld+json">
-{"description":"A Pytorch implementation of Network Adversary Generator CVPR 2018.","headline":"Network Adversary Generator","dateModified":"2020-03-30T00:00:00-05:00","datePublished":"2020-03-30T00:00:00-05:00","@type":"BlogPosting","image":"https://gokkulnath.github.io/adversarialwilderness/images/notebook/nag/Collage_perturbation.v1.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://gokkulnath.github.io/adversarialwilderness/adversarial%20machine%20learning/2020/03/30/Network-Adversary-Generation.html"},"url":"https://gokkulnath.github.io/adversarialwilderness/adversarial%20machine%20learning/2020/03/30/Network-Adversary-Generation.html","@context":"https://schema.org"}</script>
+{"description":"A Pytorch implementation of Network Adversary Generator CVPR 2018.","headline":"Network Adversary Generator","dateModified":"2020-03-30T00:00:00-05:00","datePublished":"2020-03-30T00:00:00-05:00","@type":"BlogPosting","image":"https://gokkulnath.github.io/adversarialwilderness/images/notebook/nag/Collage_perturbation.v1.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://gokkulnath.github.io/adversarialwilderness/adversarial-machine-learning/2020/03/30/Network-Adversary-Generation.html"},"url":"https://gokkulnath.github.io/adversarialwilderness/adversarial-machine-learning/2020/03/30/Network-Adversary-Generation.html","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
@@ -128,7 +128,7 @@ window.onload = wrap_img;
     
       <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
       
-        <a class="category-tags-link" href="/adversarialwilderness/categories/#Adversarial Machine learning">Adversarial Machine learning</a>
+        <a class="category-tags-link" href="/adversarialwilderness/categories/#Adversarial-Machine-learning">Adversarial-Machine-learning</a>
         
       
       </p>
@@ -2040,7 +2040,7 @@ for modelarch, model in model_dict.items():
         theme="github-light"
         crossorigin="anonymous"
         async>
-</script><a class="u-url" href="/adversarialwilderness/adversarial%20machine%20learning/2020/03/30/Network-Adversary-Generation.html" hidden></a>
+</script><a class="u-url" href="/adversarialwilderness/adversarial-machine-learning/2020/03/30/Network-Adversary-Generation.html" hidden></a>
 </article>
       </div>
     </main><footer class="site-footer h-card">
