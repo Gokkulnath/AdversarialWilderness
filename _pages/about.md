@@ -1,7 +1,7 @@
 ---
 layout: page
-title: About Me1
-permalink: /about1/
+title: About Me
+permalink: /about/
 ---
 
 ![]({{site.baseurl}}/images/logo.png "https://gokkulnath.github.io/adversarialwilderness/about/")
