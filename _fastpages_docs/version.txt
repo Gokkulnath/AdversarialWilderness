@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-2.1.29
-=======
-2.1.14
->>>>>>> parent of 9842628... Merge pull request #5 from Gokkulnath/fastpages-automated-upgrade
+2.1.32
