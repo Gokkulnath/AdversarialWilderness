@@ -1,237 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://gokkulnath.github.io/adversarialwilderness/feed.xml" rel="self" type="application/atom+xml" /><link href="https://gokkulnath.github.io/adversarialwilderness/" rel="alternate" type="text/html" /><updated>2020-06-24T16:17:13-05:00</updated><id>https://gokkulnath.github.io/adversarialwilderness/feed.xml</id><title type="html">Adversarial Wilderness</title><subtitle>Thoughts, stories and ideas. ~Gokkulnath</subtitle><entry><title type="html">Choosing Components For Personal Deep Learning Machine</title><link href="https://gokkulnath.github.io/adversarialwilderness/2020/05/28/Choosing-Components-for-Personal-Deep-Learning-Machine.html" rel="alternate" type="text/html" title="Choosing Components For Personal Deep Learning Machine" /><published>2020-05-28T00:00:00-05:00</published><updated>2020-05-28T00:00:00-05:00</updated><id>https://gokkulnath.github.io/adversarialwilderness/2020/05/28/Choosing-Components-for-Personal-Deep-Learning-Machine</id><content type="html" xml:base="https://gokkulnath.github.io/adversarialwilderness/2020/05/28/Choosing-Components-for-Personal-Deep-Learning-Machine.html">&lt;p&gt;&lt;img src=&quot;https://Gokkulnath.github.io/adversarialwilderness/assets/img/2020-05-28-Choosing-Components-for-Personal-Deep-Learning-Machine/media/image1.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Hi Everyone!&lt;/p&gt;
-
-&lt;p&gt;As a Hobbyist, the cost of EC2 Instances for running an experiment has been a barrier in exploring and solving Deep Learning Problems. Reserved Instances were my initial playground as i was not familiar with cloud ecosystem.&lt;/p&gt;
-
-&lt;p&gt;Eventually, &lt;strong&gt;&lt;em&gt;Spot instances &lt;/em&gt;&lt;/strong&gt;became&lt;em&gt; &lt;/em&gt;my alternative to run well structured experiments. But often times, it found it very difficult to setup and run experiments. The main problem comes when setting up the environment for backing up and restoring the data/progress. Thanks to &lt;a href=&quot;https://github.com/atramos&quot;&gt;&lt;span class=&quot;underline&quot;&gt;Alex Ramos&lt;/span&gt;&lt;/a&gt; and &lt;a href=&quot;https://medium.com/u/d41130ab0af4?source=post_page-----56bae813e34a----------------------&quot;&gt;&lt;span class=&quot;underline&quot;&gt;Slav Ivanov&lt;/span&gt;&lt;/a&gt; for the &lt;a href=&quot;https://github.com/atramos/ec2-spotter/tree/master/classic&quot;&gt;&lt;span class=&quot;underline&quot;&gt;Classic&lt;/span&gt;&lt;/a&gt; and &lt;a href=&quot;https://github.com/atramos/ec2-spotter/tree/master/24x7&quot;&gt;&lt;span class=&quot;underline&quot;&gt;24X7&lt;/span&gt;&lt;/a&gt; &lt;em&gt;versions of the EC2 Spotter tool&lt;/em&gt; which came in handy when dealing with spot instances.( Try them out if you still use &lt;em&gt;Spot Instances &lt;/em&gt;)&lt;/p&gt;
-
-&lt;p&gt;After using AWS EC2 instances for a around 6 months, I realized that the long term cheaper alternative is to invest on a local machine. This allows me to gain more by having better control over the experiment and with similar or better performance. On detailed survey throughout the internet, I couldn’t find any difference of opinion regarding the local machine idea when it comes to long term usage. Hence, I started to research on choosing components for my local deep learning build.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Selection of components for Deep learning is a a huge puzzle that intrigues many beginners who try to get their build. It requires the user to have some basic knowledge to build a system that can meet the required performance for the cost involved.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;This post tries to help the fellow readers to get started with selection of components and understand the parameters before choosing the product.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;So! Lets get Started!!&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;First things First!&lt;/strong&gt; You must finalize on the &lt;strong&gt;maximum number of GPU’s&lt;/strong&gt; that you plan to have on the newly built system. If you’re an active machine learning researcher then you might probably want more GPUs. This can help you run more than one task in parallel and try different variations of model architectures, data normalization, hyper parameters etc.. in parallel.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;&lt;strong&gt;My Recommendations:&lt;/strong&gt; If you are a researcher/Student/Hobbyist Consider for a Dual GPU Build. If you plan to run huge models and participate in insane contests like ImageNet which require heavy computation, consider for a Multi GPU Build.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Once you have arrived at a conclusion on the type of build you can arrive at the number of PCIe lanes required:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;blockquote&gt;
-      &lt;p&gt;Dual-GPU Build (Up to 2 GPU): 24 PCIe Lanes (Might Experience Performance Lag when using SSD that share PCIe lanes or when Both GPU)&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;blockquote&gt;
-      &lt;p&gt;Multi-GPU Build (Up to 4 GPU’s): 40 to 44 PCIe Lanes&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;em&gt;&lt;strong&gt;Why PCIe lanes first?&lt;/strong&gt;— In practice, there will be a bottleneck to keep data flowing to the GPU because of disk access operations and/or data augmentation. A GPU would require 16 PCIe lanes to work at its full capacity.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;This post will address only about Dual-GPU System. There will be a follow up post about the Multi-GPU Build.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Dual-GPU Build&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;1) Motherboard:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Once the PCI-e Lane requirement has been decided, We can now choose the Motherboard Chipset:&lt;/p&gt;
-
-&lt;p&gt;The below table gives you the no of PCI-e Lanes available with different Chipsets available:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://Gokkulnath.github.io/adversarialwilderness/assets/img/2020-05-28-Choosing-Components-for-Personal-Deep-Learning-Machine/media/image2.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Comparison of PCI-e Lanes across different Chipsets (Mostly Intel Processor Based)&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;Note: **Ideally a GPU, to perform at its full capacity requires **16 PCI-e Lanes.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;So, even though Chipsets like B150,B250, H110,H170,H270 support Intel processors, They are seldom used for deep learning builds since the number of PCIe lanes will not be enough for Deep learning applications.&lt;/p&gt;
-
-&lt;p&gt;Hence, chipsets that are commonly preferred are:&lt;/p&gt;
-
-&lt;p&gt;Z170 — Support both 6th/7th Gen Intel Processor. Usage of 7th Gen might require a BIOS Update.&lt;br /&gt;
-Z270 — Support both 6th/7th Gen Intel Processor.&lt;br /&gt;
-(Latest) Z370 — Supports 8th Gen Intel Processor.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;P.S:&lt;/strong&gt; Will update the post once i have enough details for AMD based Chipsets&lt;/p&gt;
-
-&lt;p&gt;Once you have decided on the chipset, Use PC Partpicker to select the motherboard : &lt;a href=&quot;https://pcpartpicker.com/products/motherboard/&quot;&gt;&lt;span class=&quot;underline&quot;&gt;Link&lt;/span&gt;&lt;/a&gt; to select the motherboard of your choice.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Things to Keep in Mind:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;blockquote&gt;
-      &lt;p&gt;Form Factor (i.e ATX, Micro ATX, EATX etc..)&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;blockquote&gt;
-      &lt;p&gt;No of PCIe Slots ( Minimum 2 Slots)&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;blockquote&gt;
-      &lt;p&gt;Maximum RAM Supported ( 64 GB Preferred)&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;blockquote&gt;
-      &lt;p&gt;No of RAM Slots (Minimum 4 Slots)&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;blockquote&gt;
-      &lt;p&gt;SSD and SATA Slots (if you is concerned)&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;strong&gt;2) Processors:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Through the selection of motherboards, We have narrowed down the choice of processor based on constraints like socket type, But the choice of CPU might further dependent on GPU. For Deep learning applications, As mentioned earlier, The CPU is responsible mainly for the data processing and communicating with GPU. Hence, The number of cores and threads per core is important if we want to parallelize all that data preparation. It is advised to choose a multi core system (Preferably 4 Cores)to handle these tasks.&lt;/p&gt;
-
-&lt;p&gt;Things to Keep in Mind:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;blockquote&gt;
-      &lt;p&gt;Socket Type&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;blockquote&gt;
-      &lt;p&gt;No of Cores&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;blockquote&gt;
-      &lt;p&gt;Cost&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;PS. Some processors may need the user to get their own Cooler Fan. Usually, Unboxed Processor doesn’t come with a cooler fan but allows the user to overclock.&lt;/p&gt;
-
-&lt;p&gt;Use PC Partpicker to select the Processor : &lt;a href=&quot;https://pcpartpicker.com/products/cpu/#m=21&quot;&gt;&lt;span class=&quot;underline&quot;&gt;Link&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Memory or RAM:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://Gokkulnath.github.io/adversarialwilderness/assets/img/2020-05-28-Choosing-Components-for-Personal-Deep-Learning-Machine/media/image3.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;When working with large/big datasets we might need to have them in memory. Size of the RAM decide how much of dataset you can hold in memory. For Deep learning applications it is suggested to have a minimum of 16GB memory (&lt;a href=&quot;https://medium.com/u/34ab754f8c5e?source=post_page-----56bae813e34a----------------------&quot;&gt;&lt;span class=&quot;underline&quot;&gt;Jeremy Howard&lt;/span&gt;&lt;/a&gt; Advises to get 32GB). Regarding the Clock, The higher the better. It ideally signifies the Speed — Access Time but a minimum of 2400 MHz is advised.&lt;/p&gt;
-
-&lt;p&gt;Always try to get more memory in a single stick as it will allow for further expansion in remaining slots.I have seen many people who get 4*8 GB RAM instead of 2*16 GB ending up using all 4 Slots and no room for upgrade just because they are bit cheap than the latter.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Storage:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;The price of HDD is decreasing continuosly as SSD become more affordable and faster.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://Gokkulnath.github.io/adversarialwilderness/assets/img/2020-05-28-Choosing-Components-for-Personal-Deep-Learning-Machine/media/image4.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Source: Storagenewsletter&lt;/p&gt;
-
-&lt;p&gt;Its always better to get a small size SSD and a large HDD. SSD’s are preffered to store and retrieve data that is actively used. On the other hand HDD should be used to store data that are to be used in future.&lt;/p&gt;
-
-&lt;p&gt;SSD — Datasets in use + OS (Costly! &lt;strong&gt;Min:&lt;/strong&gt; 128 GB Recommended)&lt;/p&gt;
-
-&lt;p&gt;HDD — Misc User Data (Cheaper! &lt;strong&gt;Min:&lt;/strong&gt; 2 TB Recommended 7200RPM)&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;GPU:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;GPU’s are the heart of Deep learning Build. They decide the performance gain that you get during training of neural networks. As most of the computation involved in Deep Learning are Matrix operations, GPU outperforms conventional CPU by running the same as parallel operations. They have small computation units called cores that can have threads which enable them to run the matrix operations faster. The Memory bandwidth of the GPU also enables to operate on large batches of data.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://timdettmers.com/&quot;&gt;&lt;span class=&quot;underline&quot;&gt;Tim Dettmers&lt;/span&gt;&lt;/a&gt; has a great article on choosing a &lt;a href=&quot;http://timdettmers.com/2017/04/09/which-gpu-for-deep-learning/&quot;&gt;&lt;span class=&quot;underline&quot;&gt;GPU for Deep Learning&lt;/span&gt;&lt;/a&gt;, which he regularly updates as new cards come on the market. Please check them out before choosing your GPU.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Couldn’t resist to repost from Tim Dettmers Post. His TL;DR advice for choosing GPU:&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;&lt;strong&gt;Best GPU overall (by a small margin)&lt;/strong&gt;: Titan Xp&lt;br /&gt;
-&lt;strong&gt;Cost efficient but expensive&lt;/strong&gt;: GTX 1080 Ti, GTX 1070, GTX 1080&lt;br /&gt;
-&lt;strong&gt;Cost efficient and cheap&lt;/strong&gt;: GTX 1060 (6GB)&lt;br /&gt;
-&lt;strong&gt;I work with data sets &amp;gt; 250GB&lt;/strong&gt;: GTX Titan X (Maxwell), NVIDIA Titan X Pascal, or NVIDIA Titan Xp&lt;br /&gt;
-&lt;strong&gt;I have little money&lt;/strong&gt;: GTX 1060 (6GB)&lt;br /&gt;
-&lt;strong&gt;I have almost no money&lt;/strong&gt;: GTX 1050 Ti (4GB)&lt;br /&gt;
-&lt;strong&gt;I do Kaggle&lt;/strong&gt;: GTX 1060 (6GB) for any “normal” competition, or GTX 1080 Ti for “deep learning competitions”&lt;br /&gt;
-&lt;strong&gt;I am a competitive computer vision researcher&lt;/strong&gt;: NVIDIA Titan Xp; do not upgrade from existing Titan X (Pascal or Maxwell)&lt;br /&gt;
-&lt;strong&gt;I am a researcher&lt;/strong&gt;: GTX 1080 Ti. In some cases, like natural language processing, a GTX 1070 or GTX 1080 might also be a solid choice — check the memory requirements of your current models&lt;br /&gt;
-&lt;strong&gt;I want to build a GPU cluster&lt;/strong&gt;: This is really complicated, you can get some ideas &lt;a href=&quot;http://timdettmers.com/2014/09/21/how-to-build-and-use-a-multi-gpu-system-for-deep-learning/&quot;&gt;&lt;span class=&quot;underline&quot;&gt;here&lt;/span&gt;&lt;/a&gt;&lt;br /&gt;
-&lt;strong&gt;I started deep learning and I am serious about it&lt;/strong&gt;: Start with a GTX 1060 (6GB). Depending of what area, you choose next (start-up, Kaggle, research, applied deep learning) sell your GTX 1060 and buy something more appropriate&lt;br /&gt;
-&lt;strong&gt;I want to try deep learning, but I am not serious about it&lt;/strong&gt;: GTX 1050 Ti (4 or 2GB)&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;I strongly recommend a beginner to get a 1060 6gb (New/Used) if they are on a budget. If the budget can go up a bit then you can get a 1070ti (MSRP around 430 USD) that was released recently &lt;em&gt;i.e.. OCT 26th&lt;/em&gt; which offers almost the same performance as 1080 but at a lower cost (Almost Same as 1070). Don’t buy a 1070 unless you have a strong reason to, instead get a 1070ti as it has a greater number of cores. If you have enough money, then get a 1080ti. (No Second Thoughts). Again, if you are very active in performing research consider buying 2 X 1070ti instead of 1 X 1080ti as it gives flexibility that’s was discussed earlier.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;For readers wondering about different editions of GPU like Founder’s Edition, OC, FTW etc.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Here’s the Info that you need:&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Difference between Editions: &lt;/strong&gt;Fundamentally all of them have the same GPU processor inside them. The main difference would be variation in quality of the PCB and usually high-end models would have higher binned chips (Best Quality).&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Difference between Brands: &lt;/strong&gt;Brands build their custom PCB components and aesthetics like lighting, Multiple fans, water cooled or back plate. These are done in order to improve the performance on the reference boards by just keeping the reference design on the card and add custom coolers on it. The base clocks out of the box matters very little generally.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Water vs Air cooled GPU:&lt;/strong&gt; — Nvidia lowers the clock rate on your GPU as it gets hot. I don’t know if there are set temperatures that trigger this, or if it’s just linear. Water cooling will keep your GPU running at top speed.&lt;/p&gt;
-
-&lt;p&gt;Again! please research through the different editions. I have heard that FTW to be the coolest one to get. (Silent and No heating issues)&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;PSU:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Once the Components are selected using PCpartpicker site, it will give a rough estimate of power usage. It’s always better to get a PSU, large (1.2 to 1.5 times estimated power) enough to handle the power. In case if you plan to add more GPU(Add 100 W per GPU) then consider buying a PSU such that it can handle that requirement too. Some PSU tend to generate noise hence research on different products based on reviews before buying. I have found that EVGA G2 series seems to be solid option to consider.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: Gold, Silver, Platinum described along with the product refers to the efficiency of the PSU (Heat Generation). It directly correlates to power savings.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Conclusion:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;For buying the components, I strongly recommend the reader to keep an eye on&lt;strong&gt; &lt;a href=&quot;https://www.reddit.com/r/buildapcsales/&quot;&gt;r/buildapcsales &lt;/a&gt;&lt;/strong&gt;and&lt;strong&gt; &lt;a href=&quot;https://www.reddit.com/r/hardwareswap/&quot;&gt;r/hardwareswap&lt;/a&gt;&lt;/strong&gt; (In US) for deals and grab them instead of buying them at retail price.&lt;strong&gt; Open-Box&lt;/strong&gt; components seem to be cheaper and should be considered when on stringent budget. Try to get the components in instalments instead of getting them all at once if you are not in urgent need.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Cheaper Alternative:&lt;/strong&gt; Try to get an Open-Box Pre-Built System and modify the components as per your requirement. (For Lazy Folks!)&lt;/p&gt;
-
-&lt;p&gt;The information described are based on my research and understanding from multiple articles and build guides from the internet. If there are any errors, please kindly notify me so that I can fix them. Feel free to contact me or comment below if have any questions. Thanks for reading!&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;blockquote&gt;
-      &lt;p&gt;Comparison of No of PCI-e Lanes across 200+ Chipsets (&lt;a href=&quot;https://www.pugetsystems.com/labs/articles/Z270-H270-Q270-Q250-B250---What-is-the-Difference-876/&quot;&gt;&lt;span class=&quot;underline&quot;&gt;https://www.pugetsystems.com/labs/articles/Z270-H270-Q270-Q250-B250—What-is-the-Difference-876/&lt;/span&gt;&lt;/a&gt;)&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;blockquote&gt;
-      &lt;p&gt;Comparison of No of PCI-e Lanes across 100+ Chipsets ( &lt;a href=&quot;https://www.pugetsystems.com/labs/articles/Z170-H170-H110-B170-Q150-Q170---What-is-the-Difference-635/&quot;&gt;&lt;span class=&quot;underline&quot;&gt;https://www.pugetsystems.com/labs/articles/Z170-H170-H110-B170-Q150-Q170—What-is-the-Difference-635/&lt;/span&gt;&lt;/a&gt;)&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;blockquote&gt;
-      &lt;p&gt;Fast.ai Discussion Forum(Might require a Signup) (&lt;a href=&quot;http://forums.fast.ai/t/making-your-own-server/174/506&quot;&gt;&lt;span class=&quot;underline&quot;&gt;http://forums.fast.ai/t/making-your-own-server/174/506&lt;/span&gt;&lt;/a&gt;)&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;blockquote&gt;
-      &lt;p&gt;PC Part Picker: &lt;a href=&quot;https://pcpartpicker.com/&quot;&gt;&lt;span class=&quot;underline&quot;&gt;https://pcpartpicker.com&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;blockquote&gt;
-      &lt;p&gt;Choosing GPU for Deep learning (&lt;a href=&quot;http://timdettmers.com/2017/04/09/which-gpu-for-deep-learning/&quot;&gt;&lt;span class=&quot;underline&quot;&gt;http://timdettmers.com/2017/04/09/which-gpu-for-deep-learning/&lt;/span&gt;&lt;/a&gt;)&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;blockquote&gt;
-      &lt;p&gt;The $1700 Deep Learning box (&lt;a href=&quot;https://blog.slavv.com/the-1700-great-deep-learning-box-assembly-setup-and-benchmarks-148c5ebe6415&quot;&gt;&lt;span class=&quot;underline&quot;&gt;https://blog.slavv.com/the-1700-great-deep-learning-box-assembly-setup-and-benchmarks-148c5ebe6415&lt;/span&gt;&lt;/a&gt;)&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;strong&gt;FAQ &amp;amp; Miscellaneous :&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;CPU Lanes vs PCI-e Lanes:&lt;/p&gt;
-
-&lt;p&gt;PCIe lane denotes the &lt;em&gt;maximum&lt;/em&gt; bandwidth that is available for graphics cards’ communication with the CPU. Having more lanes than you need won’t increase performance, you just don’t want to have so few that it starts restricting CPU/GPU intercommunication. Generally an x8 lane of PCIe 3.0 has more than enough bandwidth for any gaming card, so 16 lanes for dual cards or 24 lanes for triple cards is fine. In applications outside of gaming, such as when the GPU is being used to accelerate CPU computation for workstations and servers, there is a lot more communication between the CPU and GPU than in games, so 40 lanes might be helpful there. The X99 platform is derived from Intel’s server/workstation chips, so that’s why they have so many lanes.&lt;/p&gt;
-
-&lt;p&gt;Source: &lt;a href=&quot;https://linustechtips.com/main/topic/203664-i-dont-understand-the-difference-between-28-and-40-pci-lanes/&quot;&gt;&lt;span class=&quot;underline&quot;&gt;Link&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">Research Ideas</title><link href="https://gokkulnath.github.io/adversarialwilderness/ideas/2020/03/30/Research-Ideas-College.html" rel="alternate" type="text/html" title="Research Ideas" /><published>2020-03-30T00:00:00-05:00</published><updated>2020-03-30T00:00:00-05:00</updated><id>https://gokkulnath.github.io/adversarialwilderness/ideas/2020/03/30/Research-Ideas-College</id><content type="html" xml:base="https://gokkulnath.github.io/adversarialwilderness/ideas/2020/03/30/Research-Ideas-College.html">&lt;h1 id=&quot;research-ideas-outdated-2014&quot;&gt;Research Ideas (Outdated: 2014)&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://gokkulnath.github.io/adversarialwilderness/feed.xml" rel="self" type="application/atom+xml" /><link href="https://gokkulnath.github.io/adversarialwilderness/" rel="alternate" type="text/html" /><updated>2020-06-24T16:22:40-05:00</updated><id>https://gokkulnath.github.io/adversarialwilderness/feed.xml</id><title type="html">Adversarial Wilderness</title><subtitle>Thoughts, stories and ideas. ~Gokkulnath</subtitle><entry><title type="html">Research Ideas</title><link href="https://gokkulnath.github.io/adversarialwilderness/ideas/2020/03/30/Research-Ideas-College.html" rel="alternate" type="text/html" title="Research Ideas" /><published>2020-03-30T00:00:00-05:00</published><updated>2020-03-30T00:00:00-05:00</updated><id>https://gokkulnath.github.io/adversarialwilderness/ideas/2020/03/30/Research-Ideas-College</id><content type="html" xml:base="https://gokkulnath.github.io/adversarialwilderness/ideas/2020/03/30/Research-Ideas-College.html">&lt;h1 id=&quot;research-ideas-outdated-2014&quot;&gt;Research Ideas (Outdated: 2014)&lt;/h1&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Activity recognition using Smartphone sensor.&lt;/li&gt;
@@ -2569,4 +2336,237 @@ wget https://example.com/cat_photo1.png
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;</content><author><name></name></author><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://gokkulnath.github.io/adversarialwilderness/images/DeepSnippets.jpg" /><media:content medium="image" url="https://gokkulnath.github.io/adversarialwilderness/images/DeepSnippets.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+&lt;/div&gt;</content><author><name></name></author><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://gokkulnath.github.io/adversarialwilderness/images/DeepSnippets.jpg" /><media:content medium="image" url="https://gokkulnath.github.io/adversarialwilderness/images/DeepSnippets.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Choosing Components For Personal Deep Learning Machine</title><link href="https://gokkulnath.github.io/adversarialwilderness/2017/11/21/Choosing-Components-for-Personal-Deep-Learning-Machine.html" rel="alternate" type="text/html" title="Choosing Components For Personal Deep Learning Machine" /><published>2017-11-21T00:00:00-06:00</published><updated>2017-11-21T00:00:00-06:00</updated><id>https://gokkulnath.github.io/adversarialwilderness/2017/11/21/Choosing-Components-for-Personal-Deep-Learning-Machine</id><content type="html" xml:base="https://gokkulnath.github.io/adversarialwilderness/2017/11/21/Choosing-Components-for-Personal-Deep-Learning-Machine.html">&lt;p&gt;&lt;img src=&quot;https://Gokkulnath.github.io/adversarialwilderness/assets/img/2017-11-21-Choosing-Components-for-Personal-Deep-Learning-Machine/media/image1.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Hi Everyone!&lt;/p&gt;
+
+&lt;p&gt;As a Hobbyist, the cost of EC2 Instances for running an experiment has been a barrier in exploring and solving Deep Learning Problems. Reserved Instances were my initial playground as i was not familiar with cloud ecosystem.&lt;/p&gt;
+
+&lt;p&gt;Eventually, &lt;strong&gt;&lt;em&gt;Spot instances &lt;/em&gt;&lt;/strong&gt;became&lt;em&gt; &lt;/em&gt;my alternative to run well structured experiments. But often times, it found it very difficult to setup and run experiments. The main problem comes when setting up the environment for backing up and restoring the data/progress. Thanks to &lt;a href=&quot;https://github.com/atramos&quot;&gt;&lt;span class=&quot;underline&quot;&gt;Alex Ramos&lt;/span&gt;&lt;/a&gt; and &lt;a href=&quot;https://medium.com/u/d41130ab0af4?source=post_page-----56bae813e34a----------------------&quot;&gt;&lt;span class=&quot;underline&quot;&gt;Slav Ivanov&lt;/span&gt;&lt;/a&gt; for the &lt;a href=&quot;https://github.com/atramos/ec2-spotter/tree/master/classic&quot;&gt;&lt;span class=&quot;underline&quot;&gt;Classic&lt;/span&gt;&lt;/a&gt; and &lt;a href=&quot;https://github.com/atramos/ec2-spotter/tree/master/24x7&quot;&gt;&lt;span class=&quot;underline&quot;&gt;24X7&lt;/span&gt;&lt;/a&gt; &lt;em&gt;versions of the EC2 Spotter tool&lt;/em&gt; which came in handy when dealing with spot instances.( Try them out if you still use &lt;em&gt;Spot Instances &lt;/em&gt;)&lt;/p&gt;
+
+&lt;p&gt;After using AWS EC2 instances for a around 6 months, I realized that the long term cheaper alternative is to invest on a local machine. This allows me to gain more by having better control over the experiment and with similar or better performance. On detailed survey throughout the internet, I couldn’t find any difference of opinion regarding the local machine idea when it comes to long term usage. Hence, I started to research on choosing components for my local deep learning build.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Selection of components for Deep learning is a a huge puzzle that intrigues many beginners who try to get their build. It requires the user to have some basic knowledge to build a system that can meet the required performance for the cost involved.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;This post tries to help the fellow readers to get started with selection of components and understand the parameters before choosing the product.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;So! Lets get Started!!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;First things First!&lt;/strong&gt; You must finalize on the &lt;strong&gt;maximum number of GPU’s&lt;/strong&gt; that you plan to have on the newly built system. If you’re an active machine learning researcher then you might probably want more GPUs. This can help you run more than one task in parallel and try different variations of model architectures, data normalization, hyper parameters etc.. in parallel.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;My Recommendations:&lt;/strong&gt; If you are a researcher/Student/Hobbyist Consider for a Dual GPU Build. If you plan to run huge models and participate in insane contests like ImageNet which require heavy computation, consider for a Multi GPU Build.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Once you have arrived at a conclusion on the type of build you can arrive at the number of PCIe lanes required:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;Dual-GPU Build (Up to 2 GPU): 24 PCIe Lanes (Might Experience Performance Lag when using SSD that share PCIe lanes or when Both GPU)&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;Multi-GPU Build (Up to 4 GPU’s): 40 to 44 PCIe Lanes&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Why PCIe lanes first?&lt;/strong&gt;— In practice, there will be a bottleneck to keep data flowing to the GPU because of disk access operations and/or data augmentation. A GPU would require 16 PCIe lanes to work at its full capacity.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;This post will address only about Dual-GPU System. There will be a follow up post about the Multi-GPU Build.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Dual-GPU Build&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;1) Motherboard:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Once the PCI-e Lane requirement has been decided, We can now choose the Motherboard Chipset:&lt;/p&gt;
+
+&lt;p&gt;The below table gives you the no of PCI-e Lanes available with different Chipsets available:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://Gokkulnath.github.io/adversarialwilderness/assets/img/2017-11-21-Choosing-Components-for-Personal-Deep-Learning-Machine/media/image2.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Comparison of PCI-e Lanes across different Chipsets (Mostly Intel Processor Based)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Note: **Ideally a GPU, to perform at its full capacity requires **16 PCI-e Lanes.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;So, even though Chipsets like B150,B250, H110,H170,H270 support Intel processors, They are seldom used for deep learning builds since the number of PCIe lanes will not be enough for Deep learning applications.&lt;/p&gt;
+
+&lt;p&gt;Hence, chipsets that are commonly preferred are:&lt;/p&gt;
+
+&lt;p&gt;Z170 — Support both 6th/7th Gen Intel Processor. Usage of 7th Gen might require a BIOS Update.&lt;br /&gt;
+Z270 — Support both 6th/7th Gen Intel Processor.&lt;br /&gt;
+(Latest) Z370 — Supports 8th Gen Intel Processor.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;P.S:&lt;/strong&gt; Will update the post once i have enough details for AMD based Chipsets&lt;/p&gt;
+
+&lt;p&gt;Once you have decided on the chipset, Use PC Partpicker to select the motherboard : &lt;a href=&quot;https://pcpartpicker.com/products/motherboard/&quot;&gt;&lt;span class=&quot;underline&quot;&gt;Link&lt;/span&gt;&lt;/a&gt; to select the motherboard of your choice.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Things to Keep in Mind:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;Form Factor (i.e ATX, Micro ATX, EATX etc..)&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;No of PCIe Slots ( Minimum 2 Slots)&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;Maximum RAM Supported ( 64 GB Preferred)&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;No of RAM Slots (Minimum 4 Slots)&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;SSD and SATA Slots (if you is concerned)&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;2) Processors:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Through the selection of motherboards, We have narrowed down the choice of processor based on constraints like socket type, But the choice of CPU might further dependent on GPU. For Deep learning applications, As mentioned earlier, The CPU is responsible mainly for the data processing and communicating with GPU. Hence, The number of cores and threads per core is important if we want to parallelize all that data preparation. It is advised to choose a multi core system (Preferably 4 Cores)to handle these tasks.&lt;/p&gt;
+
+&lt;p&gt;Things to Keep in Mind:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;Socket Type&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;No of Cores&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;Cost&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;PS. Some processors may need the user to get their own Cooler Fan. Usually, Unboxed Processor doesn’t come with a cooler fan but allows the user to overclock.&lt;/p&gt;
+
+&lt;p&gt;Use PC Partpicker to select the Processor : &lt;a href=&quot;https://pcpartpicker.com/products/cpu/#m=21&quot;&gt;&lt;span class=&quot;underline&quot;&gt;Link&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Memory or RAM:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://Gokkulnath.github.io/adversarialwilderness/assets/img/2017-11-21-Choosing-Components-for-Personal-Deep-Learning-Machine/media/image3.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;When working with large/big datasets we might need to have them in memory. Size of the RAM decide how much of dataset you can hold in memory. For Deep learning applications it is suggested to have a minimum of 16GB memory (&lt;a href=&quot;https://medium.com/u/34ab754f8c5e?source=post_page-----56bae813e34a----------------------&quot;&gt;&lt;span class=&quot;underline&quot;&gt;Jeremy Howard&lt;/span&gt;&lt;/a&gt; Advises to get 32GB). Regarding the Clock, The higher the better. It ideally signifies the Speed — Access Time but a minimum of 2400 MHz is advised.&lt;/p&gt;
+
+&lt;p&gt;Always try to get more memory in a single stick as it will allow for further expansion in remaining slots.I have seen many people who get 4*8 GB RAM instead of 2*16 GB ending up using all 4 Slots and no room for upgrade just because they are bit cheap than the latter.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Storage:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The price of HDD is decreasing continuosly as SSD become more affordable and faster.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://Gokkulnath.github.io/adversarialwilderness/assets/img/2017-11-21-Choosing-Components-for-Personal-Deep-Learning-Machine/media/image4.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Source: Storagenewsletter&lt;/p&gt;
+
+&lt;p&gt;Its always better to get a small size SSD and a large HDD. SSD’s are preffered to store and retrieve data that is actively used. On the other hand HDD should be used to store data that are to be used in future.&lt;/p&gt;
+
+&lt;p&gt;SSD — Datasets in use + OS (Costly! &lt;strong&gt;Min:&lt;/strong&gt; 128 GB Recommended)&lt;/p&gt;
+
+&lt;p&gt;HDD — Misc User Data (Cheaper! &lt;strong&gt;Min:&lt;/strong&gt; 2 TB Recommended 7200RPM)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;GPU:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;GPU’s are the heart of Deep learning Build. They decide the performance gain that you get during training of neural networks. As most of the computation involved in Deep Learning are Matrix operations, GPU outperforms conventional CPU by running the same as parallel operations. They have small computation units called cores that can have threads which enable them to run the matrix operations faster. The Memory bandwidth of the GPU also enables to operate on large batches of data.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://timdettmers.com/&quot;&gt;&lt;span class=&quot;underline&quot;&gt;Tim Dettmers&lt;/span&gt;&lt;/a&gt; has a great article on choosing a &lt;a href=&quot;http://timdettmers.com/2017/04/09/which-gpu-for-deep-learning/&quot;&gt;&lt;span class=&quot;underline&quot;&gt;GPU for Deep Learning&lt;/span&gt;&lt;/a&gt;, which he regularly updates as new cards come on the market. Please check them out before choosing your GPU.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Couldn’t resist to repost from Tim Dettmers Post. His TL;DR advice for choosing GPU:&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Best GPU overall (by a small margin)&lt;/strong&gt;: Titan Xp&lt;br /&gt;
+&lt;strong&gt;Cost efficient but expensive&lt;/strong&gt;: GTX 1080 Ti, GTX 1070, GTX 1080&lt;br /&gt;
+&lt;strong&gt;Cost efficient and cheap&lt;/strong&gt;: GTX 1060 (6GB)&lt;br /&gt;
+&lt;strong&gt;I work with data sets &amp;gt; 250GB&lt;/strong&gt;: GTX Titan X (Maxwell), NVIDIA Titan X Pascal, or NVIDIA Titan Xp&lt;br /&gt;
+&lt;strong&gt;I have little money&lt;/strong&gt;: GTX 1060 (6GB)&lt;br /&gt;
+&lt;strong&gt;I have almost no money&lt;/strong&gt;: GTX 1050 Ti (4GB)&lt;br /&gt;
+&lt;strong&gt;I do Kaggle&lt;/strong&gt;: GTX 1060 (6GB) for any “normal” competition, or GTX 1080 Ti for “deep learning competitions”&lt;br /&gt;
+&lt;strong&gt;I am a competitive computer vision researcher&lt;/strong&gt;: NVIDIA Titan Xp; do not upgrade from existing Titan X (Pascal or Maxwell)&lt;br /&gt;
+&lt;strong&gt;I am a researcher&lt;/strong&gt;: GTX 1080 Ti. In some cases, like natural language processing, a GTX 1070 or GTX 1080 might also be a solid choice — check the memory requirements of your current models&lt;br /&gt;
+&lt;strong&gt;I want to build a GPU cluster&lt;/strong&gt;: This is really complicated, you can get some ideas &lt;a href=&quot;http://timdettmers.com/2014/09/21/how-to-build-and-use-a-multi-gpu-system-for-deep-learning/&quot;&gt;&lt;span class=&quot;underline&quot;&gt;here&lt;/span&gt;&lt;/a&gt;&lt;br /&gt;
+&lt;strong&gt;I started deep learning and I am serious about it&lt;/strong&gt;: Start with a GTX 1060 (6GB). Depending of what area, you choose next (start-up, Kaggle, research, applied deep learning) sell your GTX 1060 and buy something more appropriate&lt;br /&gt;
+&lt;strong&gt;I want to try deep learning, but I am not serious about it&lt;/strong&gt;: GTX 1050 Ti (4 or 2GB)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;I strongly recommend a beginner to get a 1060 6gb (New/Used) if they are on a budget. If the budget can go up a bit then you can get a 1070ti (MSRP around 430 USD) that was released recently &lt;em&gt;i.e.. OCT 26th&lt;/em&gt; which offers almost the same performance as 1080 but at a lower cost (Almost Same as 1070). Don’t buy a 1070 unless you have a strong reason to, instead get a 1070ti as it has a greater number of cores. If you have enough money, then get a 1080ti. (No Second Thoughts). Again, if you are very active in performing research consider buying 2 X 1070ti instead of 1 X 1080ti as it gives flexibility that’s was discussed earlier.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;For readers wondering about different editions of GPU like Founder’s Edition, OC, FTW etc.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Here’s the Info that you need:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Difference between Editions: &lt;/strong&gt;Fundamentally all of them have the same GPU processor inside them. The main difference would be variation in quality of the PCB and usually high-end models would have higher binned chips (Best Quality).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Difference between Brands: &lt;/strong&gt;Brands build their custom PCB components and aesthetics like lighting, Multiple fans, water cooled or back plate. These are done in order to improve the performance on the reference boards by just keeping the reference design on the card and add custom coolers on it. The base clocks out of the box matters very little generally.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Water vs Air cooled GPU:&lt;/strong&gt; — Nvidia lowers the clock rate on your GPU as it gets hot. I don’t know if there are set temperatures that trigger this, or if it’s just linear. Water cooling will keep your GPU running at top speed.&lt;/p&gt;
+
+&lt;p&gt;Again! please research through the different editions. I have heard that FTW to be the coolest one to get. (Silent and No heating issues)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;PSU:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Once the Components are selected using PCpartpicker site, it will give a rough estimate of power usage. It’s always better to get a PSU, large (1.2 to 1.5 times estimated power) enough to handle the power. In case if you plan to add more GPU(Add 100 W per GPU) then consider buying a PSU such that it can handle that requirement too. Some PSU tend to generate noise hence research on different products based on reviews before buying. I have found that EVGA G2 series seems to be solid option to consider.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: Gold, Silver, Platinum described along with the product refers to the efficiency of the PSU (Heat Generation). It directly correlates to power savings.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Conclusion:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;For buying the components, I strongly recommend the reader to keep an eye on&lt;strong&gt; &lt;a href=&quot;https://www.reddit.com/r/buildapcsales/&quot;&gt;r/buildapcsales &lt;/a&gt;&lt;/strong&gt;and&lt;strong&gt; &lt;a href=&quot;https://www.reddit.com/r/hardwareswap/&quot;&gt;r/hardwareswap&lt;/a&gt;&lt;/strong&gt; (In US) for deals and grab them instead of buying them at retail price.&lt;strong&gt; Open-Box&lt;/strong&gt; components seem to be cheaper and should be considered when on stringent budget. Try to get the components in instalments instead of getting them all at once if you are not in urgent need.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Cheaper Alternative:&lt;/strong&gt; Try to get an Open-Box Pre-Built System and modify the components as per your requirement. (For Lazy Folks!)&lt;/p&gt;
+
+&lt;p&gt;The information described are based on my research and understanding from multiple articles and build guides from the internet. If there are any errors, please kindly notify me so that I can fix them. Feel free to contact me or comment below if have any questions. Thanks for reading!&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;Comparison of No of PCI-e Lanes across 200+ Chipsets (&lt;a href=&quot;https://www.pugetsystems.com/labs/articles/Z270-H270-Q270-Q250-B250---What-is-the-Difference-876/&quot;&gt;&lt;span class=&quot;underline&quot;&gt;https://www.pugetsystems.com/labs/articles/Z270-H270-Q270-Q250-B250—What-is-the-Difference-876/&lt;/span&gt;&lt;/a&gt;)&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;Comparison of No of PCI-e Lanes across 100+ Chipsets ( &lt;a href=&quot;https://www.pugetsystems.com/labs/articles/Z170-H170-H110-B170-Q150-Q170---What-is-the-Difference-635/&quot;&gt;&lt;span class=&quot;underline&quot;&gt;https://www.pugetsystems.com/labs/articles/Z170-H170-H110-B170-Q150-Q170—What-is-the-Difference-635/&lt;/span&gt;&lt;/a&gt;)&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;Fast.ai Discussion Forum(Might require a Signup) (&lt;a href=&quot;http://forums.fast.ai/t/making-your-own-server/174/506&quot;&gt;&lt;span class=&quot;underline&quot;&gt;http://forums.fast.ai/t/making-your-own-server/174/506&lt;/span&gt;&lt;/a&gt;)&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;PC Part Picker: &lt;a href=&quot;https://pcpartpicker.com/&quot;&gt;&lt;span class=&quot;underline&quot;&gt;https://pcpartpicker.com&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;Choosing GPU for Deep learning (&lt;a href=&quot;http://timdettmers.com/2017/04/09/which-gpu-for-deep-learning/&quot;&gt;&lt;span class=&quot;underline&quot;&gt;http://timdettmers.com/2017/04/09/which-gpu-for-deep-learning/&lt;/span&gt;&lt;/a&gt;)&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;The $1700 Deep Learning box (&lt;a href=&quot;https://blog.slavv.com/the-1700-great-deep-learning-box-assembly-setup-and-benchmarks-148c5ebe6415&quot;&gt;&lt;span class=&quot;underline&quot;&gt;https://blog.slavv.com/the-1700-great-deep-learning-box-assembly-setup-and-benchmarks-148c5ebe6415&lt;/span&gt;&lt;/a&gt;)&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;FAQ &amp;amp; Miscellaneous :&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;CPU Lanes vs PCI-e Lanes:&lt;/p&gt;
+
+&lt;p&gt;PCIe lane denotes the &lt;em&gt;maximum&lt;/em&gt; bandwidth that is available for graphics cards’ communication with the CPU. Having more lanes than you need won’t increase performance, you just don’t want to have so few that it starts restricting CPU/GPU intercommunication. Generally an x8 lane of PCIe 3.0 has more than enough bandwidth for any gaming card, so 16 lanes for dual cards or 24 lanes for triple cards is fine. In applications outside of gaming, such as when the GPU is being used to accelerate CPU computation for workstations and servers, there is a lot more communication between the CPU and GPU than in games, so 40 lanes might be helpful there. The X99 platform is derived from Intel’s server/workstation chips, so that’s why they have so many lanes.&lt;/p&gt;
+
+&lt;p&gt;Source: &lt;a href=&quot;https://linustechtips.com/main/topic/203664-i-dont-understand-the-difference-between-28-and-40-pci-lanes/&quot;&gt;&lt;span class=&quot;underline&quot;&gt;Link&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html"></summary></entry></feed>
