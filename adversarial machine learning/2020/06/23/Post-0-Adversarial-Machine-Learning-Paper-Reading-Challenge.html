@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Post 0: Adversarial Machine Learning Paper Reading Challenge | Adversarial Wilderness</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="Post 0: Adversarial Machine Learning Paper Reading Challenge" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="A Description of My First PR in Torchvision" />
+<meta property="og:description" content="A Description of My First PR in Torchvision" />
+<link rel="canonical" href="https://gokkulnath.github.io/adversarialwilderness/adversarial%20machine%20learning/2020/06/23/Post-0-Adversarial-Machine-Learning-Paper-Reading-Challenge.html" />
+<meta property="og:url" content="https://gokkulnath.github.io/adversarialwilderness/adversarial%20machine%20learning/2020/06/23/Post-0-Adversarial-Machine-Learning-Paper-Reading-Challenge.html" />
+<meta property="og:site_name" content="Adversarial Wilderness" />
+<meta property="og:image" content="https://gokkulnath.github.io/adversarialwilderness/images/notebook/AMLPaperReadingChallenge.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-06-23T00:00:00-05:00" />
+<script type="application/ld+json">
+{"description":"A Description of My First PR in Torchvision","headline":"Post 0: Adversarial Machine Learning Paper Reading Challenge","dateModified":"2020-06-23T00:00:00-05:00","datePublished":"2020-06-23T00:00:00-05:00","@type":"BlogPosting","image":"https://gokkulnath.github.io/adversarialwilderness/images/notebook/AMLPaperReadingChallenge.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://gokkulnath.github.io/adversarialwilderness/adversarial%20machine%20learning/2020/06/23/Post-0-Adversarial-Machine-Learning-Paper-Reading-Challenge.html"},"url":"https://gokkulnath.github.io/adversarialwilderness/adversarial%20machine%20learning/2020/06/23/Post-0-Adversarial-Machine-Learning-Paper-Reading-Challenge.html","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/adversarialwilderness/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://gokkulnath.github.io/adversarialwilderness/feed.xml" title="Adversarial Wilderness" /><!-- the google_analytics_id gets auto inserted from the config file -->
+
+
+
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-149929011-2','auto');ga('require','displayfeatures');ga('send','pageview');</script>
+
+<link rel="shortcut icon" type="image/x-icon" href="/adversarialwilderness/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Post 0: Adversarial Machine Learning Paper Reading Challenge | Adversarial Wilderness</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="Post 0: Adversarial Machine Learning Paper Reading Challenge" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="A Description of My First PR in Torchvision" />
+<meta property="og:description" content="A Description of My First PR in Torchvision" />
+<link rel="canonical" href="https://gokkulnath.github.io/adversarialwilderness/adversarial%20machine%20learning/2020/06/23/Post-0-Adversarial-Machine-Learning-Paper-Reading-Challenge.html" />
+<meta property="og:url" content="https://gokkulnath.github.io/adversarialwilderness/adversarial%20machine%20learning/2020/06/23/Post-0-Adversarial-Machine-Learning-Paper-Reading-Challenge.html" />
+<meta property="og:site_name" content="Adversarial Wilderness" />
+<meta property="og:image" content="https://gokkulnath.github.io/adversarialwilderness/images/notebook/AMLPaperReadingChallenge.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-06-23T00:00:00-05:00" />
+<script type="application/ld+json">
+{"description":"A Description of My First PR in Torchvision","headline":"Post 0: Adversarial Machine Learning Paper Reading Challenge","dateModified":"2020-06-23T00:00:00-05:00","datePublished":"2020-06-23T00:00:00-05:00","@type":"BlogPosting","image":"https://gokkulnath.github.io/adversarialwilderness/images/notebook/AMLPaperReadingChallenge.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://gokkulnath.github.io/adversarialwilderness/adversarial%20machine%20learning/2020/06/23/Post-0-Adversarial-Machine-Learning-Paper-Reading-Challenge.html"},"url":"https://gokkulnath.github.io/adversarialwilderness/adversarial%20machine%20learning/2020/06/23/Post-0-Adversarial-Machine-Learning-Paper-Reading-Challenge.html","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+<link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
+<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css"><link type="application/atom+xml" rel="alternate" href="https://gokkulnath.github.io/adversarialwilderness/feed.xml" title="Adversarial Wilderness" /><!-- the google_analytics_id gets auto inserted from the config file -->
+
+
+
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-149929011-2','auto');ga('require','displayfeatures');ga('send','pageview');</script>
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+    <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement( document.body, {
+        delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "[%", right: "%]", display: true},
+            {left: "$", right: "$", display: false}
+        ]}
+        );
+    });
+    </script>
+
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head><body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/adversarialwilderness/">Adversarial Wilderness</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/adversarialwilderness/about/">About Me</a><a class="page-link" href="/adversarialwilderness/cv/">CV</a><a class="page-link" href="/adversarialwilderness/News/">News!</a><a class="page-link" href="/adversarialwilderness/research/">Research Ideas</a><a class="page-link" href="/adversarialwilderness/search/">Search</a><a class="page-link" href="/adversarialwilderness/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Post 0: Adversarial Machine Learning Paper Reading Challenge</h1><p class="page-description">A Description of My First PR in Torchvision</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2020-06-23T00:00:00-05:00" itemprop="datePublished">
+        Jun 23, 2020
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      2 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/adversarialwilderness/categories/#Adversarial Machine Learning">Adversarial Machine Learning</a>
+        
+      
+      </p>
+    
+
+    
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul class="section-nav">
+<li class="toc-entry toc-h2"><a href="#Paper-Summary-Series-Road-map-:">Paper Summary Series Road-map : </a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#Preliminary-Papers">Preliminary Papers </a></li>
+<li class="toc-entry toc-h3"><a href="#Attacks-[requires-Preliminary-Papers]">Attacks [requires Preliminary Papers] </a></li>
+<li class="toc-entry toc-h3"><a href="#Transferability-[requires-Preliminary-Papers]">Transferability [requires Preliminary Papers] </a></li>
+<li class="toc-entry toc-h3"><a href="#Detecting-Adversarial-Examples-[requires-Attacks,-Transferability]">Detecting Adversarial Examples [requires Attacks, Transferability] </a></li>
+<li class="toc-entry toc-h3"><a href="#Restricted-Threat-Model-Attacks-[requires-Attacks]">Restricted Threat Model Attacks [requires Attacks] </a></li>
+<li class="toc-entry toc-h3"><a href="#Physical-World-Attacks-[reqires-Attacks,-Transferability]">Physical-World Attacks [reqires Attacks, Transferability] </a></li>
+<li class="toc-entry toc-h3"><a href="#Verification-[requires-Introduction]">Verification [requires Introduction] </a></li>
+<li class="toc-entry toc-h3"><a href="#Defenses-(2)-[requires-Detecting]">Defenses (2) [requires Detecting] </a></li>
+<li class="toc-entry toc-h3"><a href="#Attacks-(2)-[requires-Defenses-(2)]">Attacks (2) [requires Defenses (2)] </a></li>
+<li class="toc-entry toc-h3"><a href="#Defenses-(3)-[requires-Attacks-(2)]">Defenses (3) [requires Attacks (2)] </a></li>
+<li class="toc-entry toc-h3"><a href="#Other-Domains-[requires-Attacks]">Other Domains [requires Attacks] </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#Resources">Resources </a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#Key-Researchers--their-affiliations:">Key Researchers  their affiliations: </a></li>
+<li class="toc-entry toc-h3"><a href="#Research-Labs-:">Research Labs : </a></li>
+<li class="toc-entry toc-h3"><a href="#Frameworks/Libraries:">Frameworks/Libraries: </a></li>
+</ul>
+</li>
+</ul><!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/15-02-2020-Post-0-Adversarial-Machine-Learning-Paper-Reading-Challenge.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Paper-Summary-Series-Road-map-:">
+<a class="anchor" href="#Paper-Summary-Series-Road-map-:" aria-hidden="true"><span class="octicon octicon-link"></span></a>Paper Summary Series Road-map :<a class="anchor-link" href="#Paper-Summary-Series-Road-map-:"> </a>
+</h2>
+<p>Top 30 Key Research papers to get the necessary fundamental papers that anyone who wants to perform neural network evaluations should read. The papers are split by topic and indicated which topics should be read before others. (List shared by Nicholas Carlini )</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Preliminary-Papers">
+<a class="anchor" href="#Preliminary-Papers" aria-hidden="true"><span class="octicon octicon-link"></span></a>Preliminary Papers<a class="anchor-link" href="#Preliminary-Papers"> </a>
+</h3>
+<ul>
+<li>[ ] Evasion Attacks against Machine Learning at Test Time</li>
+<li>[ ] Intriguing properties of neural networks</li>
+<li>[ ] Explaining and Harnessing Adversarial Examples</li>
+</ul>
+<h3 id="Attacks-[requires-Preliminary-Papers]">
+<a class="anchor" href="#Attacks-%5Brequires-Preliminary-Papers%5D" aria-hidden="true"><span class="octicon octicon-link"></span></a>Attacks [requires Preliminary Papers]<a class="anchor-link" href="#Attacks-%5Brequires-Preliminary-Papers%5D"> </a>
+</h3>
+<ul>
+<li>[ ] The Limitations of Deep Learning in Adversarial Settings</li>
+<li>[ ] DeepFool: a simple and accurate method to fool deep neural networks</li>
+<li>[ ] Towards Evaluating the Robustness of Neural Networks</li>
+</ul>
+<h3 id="Transferability-[requires-Preliminary-Papers]">
+<a class="anchor" href="#Transferability-%5Brequires-Preliminary-Papers%5D" aria-hidden="true"><span class="octicon octicon-link"></span></a>Transferability [requires Preliminary Papers]<a class="anchor-link" href="#Transferability-%5Brequires-Preliminary-Papers%5D"> </a>
+</h3>
+<ul>
+<li>[ ] Transferability in Machine Learning: from Phenomena to Black-Box Attacks using Adversarial Samples</li>
+<li>[ ] Delving into Transferable Adversarial Examples and Black-box Attacks</li>
+<li>[ ] Universal adversarial perturbations</li>
+</ul>
+<h3 id="Detecting-Adversarial-Examples-[requires-Attacks,-Transferability]">
+<a class="anchor" href="#Detecting-Adversarial-Examples-%5Brequires-Attacks,-Transferability%5D" aria-hidden="true"><span class="octicon octicon-link"></span></a>Detecting Adversarial Examples [requires Attacks, Transferability]<a class="anchor-link" href="#Detecting-Adversarial-Examples-%5Brequires-Attacks,-Transferability%5D"> </a>
+</h3>
+<ul>
+<li>[ ] On Detecting Adversarial Perturbations</li>
+<li>[ ] Detecting Adversarial Samples from Artifacts</li>
+<li>[ ] Adversarial Examples Are Not Easily Detected: Bypassing Ten Detection Methods</li>
+</ul>
+<h3 id="Restricted-Threat-Model-Attacks-[requires-Attacks]">
+<a class="anchor" href="#Restricted-Threat-Model-Attacks-%5Brequires-Attacks%5D" aria-hidden="true"><span class="octicon octicon-link"></span></a>Restricted Threat Model Attacks [requires Attacks]<a class="anchor-link" href="#Restricted-Threat-Model-Attacks-%5Brequires-Attacks%5D"> </a>
+</h3>
+<ul>
+<li>[ ] ZOO: Zeroth Order Optimization based Black-box Attacks to Deep Neural Networks without Training Substitute Models</li>
+<li>[ ] Decision-Based Adversarial Attacks: Reliable Attacks Against Black-Box Machine Learning Models</li>
+<li>[ ] Prior Convictions: Black-Box Adversarial Attacks with Bandits and Priors</li>
+</ul>
+<h3 id="Physical-World-Attacks-[reqires-Attacks,-Transferability]">
+<a class="anchor" href="#Physical-World-Attacks-%5Breqires-Attacks,-Transferability%5D" aria-hidden="true"><span class="octicon octicon-link"></span></a>Physical-World Attacks [reqires Attacks, Transferability]<a class="anchor-link" href="#Physical-World-Attacks-%5Breqires-Attacks,-Transferability%5D"> </a>
+</h3>
+<ul>
+<li>[ ] Adversarial examples in the physical world</li>
+<li>[ ] Synthesizing Robust Adversarial Examples</li>
+<li>[ ] Robust Physical-World Attacks on Deep Learning Models</li>
+</ul>
+<h3 id="Verification-[requires-Introduction]">
+<a class="anchor" href="#Verification-%5Brequires-Introduction%5D" aria-hidden="true"><span class="octicon octicon-link"></span></a>Verification [requires Introduction]<a class="anchor-link" href="#Verification-%5Brequires-Introduction%5D"> </a>
+</h3>
+<ul>
+<li>[ ] Reluplex: An Efficient SMT Solver for Verifying Deep Neural Networks</li>
+<li>[ ] On the Effectiveness of Interval Bound Propagation for Training Verifiably Robust Models</li>
+</ul>
+<h3 id="Defenses-(2)-[requires-Detecting]">
+<a class="anchor" href="#Defenses-(2)-%5Brequires-Detecting%5D" aria-hidden="true"><span class="octicon octicon-link"></span></a>Defenses (2) [requires Detecting]<a class="anchor-link" href="#Defenses-(2)-%5Brequires-Detecting%5D"> </a>
+</h3>
+<ul>
+<li>[ ] Towards Deep Learning Models Resistant to Adversarial Attacks</li>
+<li>[ ] Certified Robustness to Adversarial Examples with Differential Privacy</li>
+</ul>
+<h3 id="Attacks-(2)-[requires-Defenses-(2)]">
+<a class="anchor" href="#Attacks-(2)-%5Brequires-Defenses-(2)%5D" aria-hidden="true"><span class="octicon octicon-link"></span></a>Attacks (2) [requires Defenses (2)]<a class="anchor-link" href="#Attacks-(2)-%5Brequires-Defenses-(2)%5D"> </a>
+</h3>
+<ul>
+<li>[ ] Obfuscated Gradients Give a False Sense of Security: Circumventing Defenses to Adversarial Examples</li>
+<li>[ ] Adversarial Risk and the Dangers of Evaluating Against Weak Attacks</li>
+</ul>
+<h3 id="Defenses-(3)-[requires-Attacks-(2)]">
+<a class="anchor" href="#Defenses-(3)-%5Brequires-Attacks-(2)%5D" aria-hidden="true"><span class="octicon octicon-link"></span></a>Defenses (3) [requires Attacks (2)]<a class="anchor-link" href="#Defenses-(3)-%5Brequires-Attacks-(2)%5D"> </a>
+</h3>
+<ul>
+<li>[ ] Towards the first adversarially robust neural network model on MNIST</li>
+<li>[ ] On Evaluating Adversarial Robustness</li>
+</ul>
+<h3 id="Other-Domains-[requires-Attacks]">
+<a class="anchor" href="#Other-Domains-%5Brequires-Attacks%5D" aria-hidden="true"><span class="octicon octicon-link"></span></a>Other Domains [requires Attacks]<a class="anchor-link" href="#Other-Domains-%5Brequires-Attacks%5D"> </a>
+</h3>
+<ul>
+<li>[ ] Adversarial Attacks on Neural Network Policies</li>
+<li>[ ] Audio Adversarial Examples: Targeted Attacks on Speech-to-Text</li>
+<li>[ ] Seq2Sick: Evaluating the Robustness of Sequence-to-Sequence Models with Adversarial Examples</li>
+<li>[ ] Adversarial examples for generative models</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="/adversarialwilderness/images/copied_from_nb/resources/AMLPaperReading.png" alt="Visualized using Adversarial Machine Learning Reading List by Nicholas Carlini"></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Visualized using Adversarial Machine Learning Reading List by Nicholas Carlini — <a href="https://nicholas.carlini.com/writing/2018/adversarial-machine-learning-reading-list.html">Link</a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Resources">
+<a class="anchor" href="#Resources" aria-hidden="true"><span class="octicon octicon-link"></span></a>Resources<a class="anchor-link" href="#Resources"> </a>
+</h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Key-Researchers--their-affiliations:">
+<a class="anchor" href="#Key-Researchers--their-affiliations:" aria-hidden="true"><span class="octicon octicon-link"></span></a>Key Researchers  their affiliations:<a class="anchor-link" href="#Key-Researchers--their-affiliations:"> </a>
+</h3>
+<ul>
+<li>Nicholas Carlini (Google Brain)</li>
+<li>Anish Athalye (MIT)</li>
+<li>Nicolas Papernot (Google Brain)</li>
+<li>Wieland Brendel (University of Tubingen)</li>
+<li>Jonas Rauber (University of Tubingen)</li>
+<li>Dimitris Tsipras (MIT)</li>
+<li>Ian Goodfellow (Google Brain)</li>
+<li>Aleksander Madry (MIT)</li>
+<li>Alexey Kurakin (Google Brain)</li>
+</ul>
+<h3 id="Research-Labs-:">
+<a class="anchor" href="#Research-Labs-:" aria-hidden="true"><span class="octicon octicon-link"></span></a>Research Labs :<a class="anchor-link" href="#Research-Labs-:"> </a>
+</h3>
+<ul>
+<li>Bethge Lab : <a href="http://bethgelab.org/">http://bethgelab.org/</a>
+</li>
+</ul>
+<h3 id="Frameworks/Libraries:">
+<a class="anchor" href="#Frameworks/Libraries:" aria-hidden="true"><span class="octicon octicon-link"></span></a>Frameworks/Libraries:<a class="anchor-link" href="#Frameworks/Libraries:"> </a>
+</h3>
+<ul>
+<li>cleverhans- Tensorflow</li>
+<li>foolbox — Keras/Tensorflow/Pytorch</li>
+<li>advertorch — Pytorch</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="Gokkulnath/adversarialwilderness"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/adversarialwilderness/adversarial%20machine%20learning/2020/06/23/Post-0-Adversarial-Machine-Learning-Paper-Reading-Challenge.html" hidden></a>
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/adversarialwilderness/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/adversarialwilderness/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/adversarialwilderness/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>Thoughts, stories and ideas. ~Gokkulnath</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/gokkulnath" title="gokkulnath"><svg class="svg-icon grey"><use xlink:href="/adversarialwilderness/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/gokkulnath" title="gokkulnath"><svg class="svg-icon grey"><use xlink:href="/adversarialwilderness/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
