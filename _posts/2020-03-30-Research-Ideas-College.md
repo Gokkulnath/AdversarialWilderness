@@ -2,7 +2,7 @@
 toc: false
 layout: post
 description: A Collection of Research Ideas during my bachelor's journey.
-categories: [ideas]
+categories: [Ideas]
 hide: true
 
 title: "Research Ideas"
