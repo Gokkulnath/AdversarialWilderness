@@ -4,6 +4,10 @@ title: News!
 permalink: /News/
 ---
 
+## Current Works
+
+
+
 ## Activities!
 
 - External Internship Participant @Inkers.ai - EIP 2 and EIP 3
