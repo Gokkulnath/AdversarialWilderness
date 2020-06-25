@@ -79,7 +79,7 @@
   
       ,"page2": {
           "title": "About Me",
-          "content": ". I am 23 years old. I was born in the city of Madurai in India. I lived in Coimbatore for four years while I was pursuing my undergraduate education.I have also lived in Trichy, Vellore and Chennai during school days. Currently I stay in Bengaluru, Karnataka. I completed my undergraduate education in Electronics and Communication Engineering from the Amrita School of Engineering, Coimbatore on May 2017. . I currently work as a Software Test Engineer, Testing Virtual Network Functions(VNF) and solve Cloud based challenges related to Telecom Industry at Ericsson, Bangalore, Karnataka. . I am interested in Deep Learning and Computer Vision with specific focus on GANs, Adversarial Machine learning and Federated Learning. I am inclined towards working on projects that involve working on the intersection of these fields. I enjoy playing Table Tennis, Fixing Broken Electronics, Watching Movies and Programming. .       .",
+          "content": "This is where you put the contents of your About page. Like all your pages, it’s in Markdown format. . This website is powered by fastpages 1. . a blogging platform that natively supports Jupyter notebooks in addition to other formats. &#8617; . |",
           "url": "https://blog.gokkulnath.ml/about/",
           "relUrl": "/about/",
           "date": ""
@@ -127,6 +127,20 @@
   
 
   
+  
+
+  
+  
+
+  
+      ,"page14": {
+          "title": "",
+          "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
+          "url": "https://blog.gokkulnath.ml/robots.txt",
+          "relUrl": "/robots.txt",
+          "date": ""
+      }
+      
   
 
 }
