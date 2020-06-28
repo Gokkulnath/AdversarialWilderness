@@ -4,7 +4,6 @@ title: About Me
 permalink: /about/
 ---
 
-<<<<<<< HEAD
 ![]({{site.baseurl}}/images/logo.png "https://gokkulnath.github.io/adversarialwilderness/about/")
 
 I am 23 years old. I was born in the city of [Madurai](https://en.wikipedia.org/wiki/Madurai) in India. I lived in [Coimbatore](https://en.wikipedia.org/wiki/Coimbatore) for four years while I was pursuing my undergraduate education.I have also lived in  Trichy, Vellore and Chennai during school days. Currently I stay in [Bengaluru](https://en.wikipedia.org/wiki/Bangalore), Karnataka. I completed my undergraduate education in Electronics and Communication Engineering from the [Amrita School of Engineering, Coimbatore](https://www.amrita.edu/campus/coimbatore) on May 2017.
@@ -25,15 +24,7 @@ I am interested in Deep Learning and Computer Vision with specific focus on GANs
 &nbsp;
 [<img src="https://raw.githubusercontent.com/Gokkulnath/adversarialwilderness/master/images/logos/Twitter_bird_logo_2012.png" width="60">](https://twitter.com/gokkulnath)
 
-=======
-This is where you put the contents of your *About* page. Like all your pages, it's in [Markdown](https://guides.github.com/features/mastering-markdown/) format.
->>>>>>> d7e1bc9038fb4ba1ca14d20685077dfe0bc1776d
 
 This website is powered by **[fastpages](https://github.com/fastai/fastpages)** [^1].
 
 
-<<<<<<< HEAD
-=======
-
-[^1]:a blogging platform that natively supports Jupyter notebooks in addition to other formats.
->>>>>>> d7e1bc9038fb4ba1ca14d20685077dfe0bc1776d
