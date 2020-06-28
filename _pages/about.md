@@ -23,8 +23,3 @@ I am interested in Deep Learning and Computer Vision with specific focus on GANs
 [<img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Kaggle_logo.png" width="60">](https://kaggle.com/gokkulnath)
 &nbsp;
 [<img src="https://raw.githubusercontent.com/Gokkulnath/adversarialwilderness/master/images/logos/Twitter_bird_logo_2012.png" width="60">](https://twitter.com/gokkulnath)
-
-
-This website is powered by **[fastpages](https://github.com/fastai/fastpages)** [^1].
-
-
