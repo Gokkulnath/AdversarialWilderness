@@ -12,6 +12,23 @@ I currently work as a Software Test Engineer, Testing Virtual Network Functions(
 
 I am interested in Deep Learning and Computer Vision with specific focus on GANs, Adversarial Machine learning and Federated Learning. I am inclined towards working on projects that involve working on the intersection of these fields. I enjoy playing Table Tennis, Fixing Broken Electronics, Watching Movies and Programming.
 
+## Skills
+- Python, Flask, RobotFramework, Selenium, Pandas, Scikit-learn
+- C, MATLAB, Libsvm
+- Deep Learning Frameworks: Keras, Tensorflow 2+, Pytorch
+- Fundementals of AWS and GCP , Openstack 
+- Git, REST API
+- Automation of Web GUI and API
+  
+## MOOCS
+
+- (WIP) AI for Medicine Specialization ([Coursera](https://www.coursera.org/specializations/ai-for-medicine))
+- (WIP) TensorFlow: Data and Deployment Specialization ([Coursera](https://www.coursera.org/specializations/tensorflow-data-and-deployment))
+- Deep Learning Specialization ([Coursera](https://www.coursera.org/courses?languages=en&query=deeplearning.ai))
+- TensorFlow in Practice Specialization ([Coursera](https://www.coursera.org/specializations/tensorflow-in-practice))
+- Pratical Deep Learning for Coders - [Fast.AI](https://www.fast.ai/) (V2 & V3)
+- Deep Learning from the Foundations - [Fast.AI](https://www.fast.ai/) V3
+
 ## Publications 
 1. Gokkul Nath T.S., Sudheesh P., Jayakumar M Tracking Inbound Enemy Missile for Interception from Target Aircraft Using Extended Kalman Filter, Mueller P., Thampi S., Alam Bhuiyan M., Ko R., Doss R., Alcaraz Calero J. (eds) Security in Computing and Communications. SSCC 2016. Communications in Computer and Information Science, vol 625. Springer, Singapore.
 
