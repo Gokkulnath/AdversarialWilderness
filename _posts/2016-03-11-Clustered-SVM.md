@@ -6,6 +6,7 @@ categories: ["Machine Learning"]
 hide: false
 title: "A Novel Clustered Support Vector Machine with Reduced Support Vectors for Big Data Classification"
 comments: true 
+image: images/markdown_imgs/clusteredsvm.jpg
 ---
 
 <script type="text/javascript">
