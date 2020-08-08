@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://blog.gokkulnath.ml/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.gokkulnath.ml/" rel="alternate" type="text/html" /><updated>2020-07-08T21:00:43-05:00</updated><id>https://blog.gokkulnath.ml/feed.xml</id><title type="html">Adversarial Wilderness</title><subtitle>Thoughts, stories and ideas. ~Gokkulnath</subtitle><entry><title type="html">Research Ideas</title><link href="https://blog.gokkulnath.ml/ideas/2020/03/30/Research-Ideas-College.html" rel="alternate" type="text/html" title="Research Ideas" /><published>2020-03-30T00:00:00-05:00</published><updated>2020-03-30T00:00:00-05:00</updated><id>https://blog.gokkulnath.ml/ideas/2020/03/30/Research-Ideas-College</id><content type="html" xml:base="https://blog.gokkulnath.ml/ideas/2020/03/30/Research-Ideas-College.html">&lt;h1 id=&quot;research-ideas-outdated-2014&quot;&gt;Research Ideas (Outdated: 2014)&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://blog.gokkulnath.ml/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.gokkulnath.ml/" rel="alternate" type="text/html" /><updated>2020-08-08T07:16:15-05:00</updated><id>https://blog.gokkulnath.ml/feed.xml</id><title type="html">Adversarial Wilderness</title><subtitle>Thoughts, stories and ideas. ~Gokkulnath</subtitle><entry><title type="html">Research Ideas</title><link href="https://blog.gokkulnath.ml/ideas/2020/03/30/Research-Ideas-College.html" rel="alternate" type="text/html" title="Research Ideas" /><published>2020-03-30T00:00:00-05:00</published><updated>2020-03-30T00:00:00-05:00</updated><id>https://blog.gokkulnath.ml/ideas/2020/03/30/Research-Ideas-College</id><content type="html" xml:base="https://blog.gokkulnath.ml/ideas/2020/03/30/Research-Ideas-College.html">&lt;h1 id=&quot;research-ideas-outdated-2014&quot;&gt;Research Ideas (Outdated: 2014)&lt;/h1&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Activity recognition using Smartphone sensor.&lt;/li&gt;
@@ -2120,7 +2120,7 @@ for modelarch, model in model_dict.items():
 
 &lt;h2 id=&quot;basic-formatting&quot;&gt;Basic formatting&lt;/h2&gt;
 
-&lt;p&gt;You can use &lt;em&gt;italics&lt;/em&gt;, &lt;strong&gt;bold&lt;/strong&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;code font text&lt;/code&gt;, and create &lt;a href=&quot;https://www.markdownguide.org/cheat-sheet/&quot;&gt;links&lt;/a&gt;. Here’s a footnote &lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. Here’s a horizontal rule:&lt;/p&gt;
+&lt;p&gt;You can use &lt;em&gt;italics&lt;/em&gt;, &lt;strong&gt;bold&lt;/strong&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;code font text&lt;/code&gt;, and create &lt;a href=&quot;https://www.markdownguide.org/cheat-sheet/&quot;&gt;links&lt;/a&gt;. Here’s a footnote &lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. Here’s a horizontal rule:&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -2219,10 +2219,10 @@ wget https://example.com/cat_photo1.png
 
 &lt;h2 id=&quot;footnotes&quot;&gt;Footnotes&lt;/h2&gt;
 
-&lt;div class=&quot;footnotes&quot;&gt;
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
   &lt;ol&gt;
-    &lt;li id=&quot;fn:1&quot;&gt;
-      &lt;p&gt;This is the footnote. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;This is the footnote. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;</content><author><name></name></author><summary type="html">Example Markdown Post</summary></entry><entry><title type="html">TorchVision: My First Pull Request</title><link href="https://blog.gokkulnath.ml/pytorch/2020/01/11/TorchVision-PR.html" rel="alternate" type="text/html" title="TorchVision: My First Pull Request" /><published>2020-01-11T00:00:00-06:00</published><updated>2020-01-11T00:00:00-06:00</updated><id>https://blog.gokkulnath.ml/pytorch/2020/01/11/TorchVision-PR</id><content type="html" xml:base="https://blog.gokkulnath.ml/pytorch/2020/01/11/TorchVision-PR.html">&lt;!--
