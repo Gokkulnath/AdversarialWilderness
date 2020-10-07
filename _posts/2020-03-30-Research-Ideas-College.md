@@ -1,13 +1,13 @@
 ---
 toc: false
 layout: post
-description: A Collection of Research Ideas during my bachelor's journey.
+description: A Collection of Research Ideas during my bachelor's journey.[Not Actively Maintained]
 categories: [Ideas]
-hide: true
+hide: false
 
 title: "Research Ideas"
 ---
-# Research Ideas (Outdated: 2014)
+# Research Ideas (Outdated: 2015)
 
 1. Activity recognition using Smartphone sensor.
 2. Behavioural Diagnostics using Wireless Sensor Nodes.(Low Cost Scratch Built Node: Maniacbug)
