@@ -1,0 +1,94 @@
+<h1 id="a-fda-feature-disruptive-attack">[A] FDA: Feature Disruptive Attack</h1>
+
+<p>Created: Aug 4, 2020 6:00 AM
+Status: 10</p>
+
+<h3 id="source">Source:</h3>
+
+<ul>
+  <li>Arxiv ID: 1909.04385</li>
+  <li>URL:  <a href="https://arxiv.org/abs/1909.04385">https://arxiv.org/abs/1909.04385</a></li>
+</ul>
+
+<h2 id="tldr-100-200-words-">TLDR (100-200 Words) :</h2>
+
+<p>Generate image Specific perturbations by disrupting the inner feature representations at each layer of Neural networks. Existing attacks generate adversarial samples that optimize objective tied to softmax or pre-softmax layer of the network.  Proposed method can construct stronger/better adversarial examples. FDA works by generating image perturbation that disrupt features at each layer of the network and causes deep-features to be highly corrupt.</p>
+
+<h2 id="key-motivations">Key Motivations:</h2>
+
+<p>Generate adversaries through optimization objectives that are tied to the pre-softmax or softmax output of the network.</p>
+
+<p>In this work we, (i) show the drawbacks of such attacks, (ii) propose two new evaluation metrics: Old Label New Rank (OLNR) and New Label Old Rank (NLOR) in order to quantify the extent of damage made by an attack, and (iii) propose a new adversarial attack FDA: Feature Disruptive Attack, to address the drawbacks of existing attacks.</p>
+
+<p>FDA works by generating image perturbation that disrupt features at each layer of the network and causes deep-features to be highly corrupt.</p>
+
+<h2 id="problem-addressed-or-why-the-paper-or-the-idea-proposed-">Problem Addressed or Why the Paper or the idea proposed ??</h2>
+
+<p>Do deep features of adversarial samples retain usable clean sample information?</p>
+
+<ul>
+  <li>Existing attacks have optimization objectives ties to the softmax/pre-softmax layers, which <strong>retain high level of semantic information for its corresponding</strong> <strong>clean sample</strong>. (Validated using Feature inversion).</li>
+  <li>Inverted Features are same as clean sample. (Statistically validated)</li>
+  <li>Make model make predictions on adversarial samples that are semantically similar. (Observed Using New Metrics NLOR and OLNR)</li>
+</ul>
+
+<p>Proposed Soln : FDA generates perturbation with the aim to cause disruption of features at each layer of the network in a principled manner.</p>
+
+<p>Advantages:  FDA invariably flips the predicted label to highly unrelated classes, while also successfully removing evidence of the clean sample’s predicted label.</p>
+
+<p>Can Work in Gray Box Setting (No Knowledge of Task/ Methodology)</p>
+
+<p>Drawbacks : Image Specific Adversaries</p>
+
+<p><strong>Notation</strong></p>
+
+<p>y —&gt; (C Dimensional ) score vector Pre Softmax Scores</p>
+
+<p>yGT —&gt; Ground Truth Label (Actual Class Argmax of softmax)</p>
+
+<p>yML represents the class with the maximum predicted probability</p>
+
+<h2 id="previous-results">Previous Results:</h2>
+
+<ol>
+  <li>Sabour et al. specifically optimize to make a specific layer’s feature arbitrarily close to a target image’s features. Our objective is significantly different entailing disruption at every layer of a DNNs, without relying on a ’target’ image representation.</li>
+</ol>
+
+<h2 id="new-concepts-introduced">New Concepts Introduced</h2>
+
+<ol>
+  <li>New evaluation metrics: Old Label New Rank (OLNR) and New Label Old Rank (NLOR) in order to quantify the extent of damage made by an attack.
+    <ol>
+      <li>OLNR –&gt; Post the attack the change of rank from old label to new label</li>
+      <li>NLOR –&gt; Post the attack the change of rank of new label compared to old label</li>
+      <li>NRT-distance represents the average shift in the rank of the kth ordered statistic k. Primary benefit of NRT-distance measure is its robustness to outliers.</li>
+    </ol>
+  </li>
+  <li>Propose a new adversarial attack FDA: Feature Disruptive Attack, to address the drawbacks of existing attacks.</li>
+</ol>
+
+<p><strong>Adversarial samples</strong>: Input data containing imperceptible noise specifically crafted to manipulate the network’s prediction.</p>
+
+<p><strong>Fooling rate</strong> : Measures the strength of the attack ( percentage (%) of images for which the predicted label was changed due to the attack.)</p>
+
+<p>Label leaking effect, is the phenomenon that during adversarial training, the validation error on adversarial examples are smaller than the validation error on clean examples. (Source   <a href="http://jackhaha363.github.io/post/label_leak/">http://jackhaha363.github.io/post/label_leak/</a>)</p>
+
+<h1 id="todo">TODO:</h1>
+
+<p>Feature inversion :  Combining feature reconstruction with regularization objectives</p>
+
+<ul>
+  <li>Common Adversarial Defenses :
+    <ul>
+      <li>Adversarial Trainning</li>
+      <li>Gradient Masking</li>
+      <li>Label Leaking</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="inferences-from-table-and-figures">Inferences from Table and Figures</h2>
+
+<h2 id="experiments-conducted">Experiments Conducted:</h2>
+
+<h2 id="key-conclusions">Key Conclusions</h2>
