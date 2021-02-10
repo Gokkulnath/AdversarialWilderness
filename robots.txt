@@ -1,1 +1,1 @@
-Sitemap: https://blog.gokkulnath.ml/sitemap.xml
+Sitemap: /adversarialwilderness/sitemap.xml
