@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="/adversarialwilderness/feed.xml" rel="self" type="application/atom+xml" /><link href="/adversarialwilderness/" rel="alternate" type="text/html" /><updated>2021-02-10T05:41:00-06:00</updated><id>/adversarialwilderness/feed.xml</id><title type="html">Adversarial Wilderness</title><subtitle>Thoughts, stories and ideas. ~Gokkulnath</subtitle><entry><title type="html">Research Ideas</title><link href="/adversarialwilderness/ideas/2020/03/30/Research-Ideas-College.html" rel="alternate" type="text/html" title="Research Ideas" /><published>2020-03-30T00:00:00-05:00</published><updated>2020-03-30T00:00:00-05:00</updated><id>/adversarialwilderness/ideas/2020/03/30/Research-Ideas-College</id><content type="html" xml:base="/adversarialwilderness/ideas/2020/03/30/Research-Ideas-College.html">&lt;h1 id=&quot;research-ideas-outdated-2015&quot;&gt;Research Ideas (Outdated: 2015)&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="/adversarialwilderness/feed.xml" rel="self" type="application/atom+xml" /><link href="/adversarialwilderness/" rel="alternate" type="text/html" /><updated>2021-02-10T05:44:29-06:00</updated><id>/adversarialwilderness/feed.xml</id><title type="html">Adversarial Wilderness</title><subtitle>Thoughts, stories and ideas. ~Gokkulnath</subtitle><entry><title type="html">Research Ideas</title><link href="/adversarialwilderness/ideas/2020/03/30/Research-Ideas-College.html" rel="alternate" type="text/html" title="Research Ideas" /><published>2020-03-30T00:00:00-05:00</published><updated>2020-03-30T00:00:00-05:00</updated><id>/adversarialwilderness/ideas/2020/03/30/Research-Ideas-College</id><content type="html" xml:base="/adversarialwilderness/ideas/2020/03/30/Research-Ideas-College.html">&lt;h1 id=&quot;research-ideas-outdated-2015&quot;&gt;Research Ideas (Outdated: 2015)&lt;/h1&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Activity recognition using Smartphone sensor.&lt;/li&gt;
@@ -95,7 +95,7 @@
 &lt;/div&gt;
 &lt;div class=&quot;cell border-box-sizing text_cell rendered&quot;&gt;&lt;div class=&quot;inner_cell&quot;&gt;
 &lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
-&lt;p&gt;&lt;img src=&quot;/images/copied_from_nb/resources/AMLPaperReading.png&quot; alt=&quot;Visualized using Adversarial Machine Learning Reading List by Nicholas Carlini&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/adversarialwilderness/images/copied_from_nb/resources/AMLPaperReading.png&quot; alt=&quot;Visualized using Adversarial Machine Learning Reading List by Nicholas Carlini&quot; /&gt;&lt;/p&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
@@ -411,7 +411,7 @@
 &lt;/div&gt;
 &lt;div class=&quot;cell border-box-sizing text_cell rendered&quot;&gt;&lt;div class=&quot;inner_cell&quot;&gt;
 &lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
-&lt;p&gt;&lt;img src=&quot;/images/copied_from_nb/resources/issue_desc.png&quot; alt=&quot;&quot; title=&quot;Issue Details: https://github.com/pytorch/vision/issues/1716&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/adversarialwilderness/images/copied_from_nb/resources/issue_desc.png&quot; alt=&quot;&quot; title=&quot;Issue Details: https://github.com/pytorch/vision/issues/1716&quot; /&gt;&lt;/p&gt;
 &lt;h3 id=&quot;Understanding-the-Problem:&quot;&gt;Understanding the Problem:&lt;a class=&quot;anchor-link&quot; href=&quot;#Understanding-the-Problem:&quot;&gt; &lt;/a&gt;&lt;/h3&gt;&lt;p&gt;The Existing code doesn’t consider the splits parameter that is passed to the dataset. This is because the EMNIST Class inherits the Default MNIST Class and doesn’t set the classes attribute appropriately.&lt;/p&gt;
 &lt;h3 id=&quot;Solution?&quot;&gt;Solution?&lt;a class=&quot;anchor-link&quot; href=&quot;#Solution?&quot;&gt; &lt;/a&gt;&lt;/h3&gt;&lt;p&gt;I knew that overriding the classes attribute should do the job. From the details provided in the issue and from the link, I was able to create a dictionary that maps the splits into classes. I was a not confident with my solution initially, but then I tried to use it locally with my changes in place and gained confidence over my changes. Finally, I override the classes attribute to get the expected behaviour.&lt;/p&gt;
 &lt;h4 id=&quot;Key-Learnings:&quot;&gt;Key Learnings:&lt;a class=&quot;anchor-link&quot; href=&quot;#Key-Learnings:&quot;&gt; &lt;/a&gt;&lt;/h4&gt;&lt;ol&gt;
@@ -425,7 +425,7 @@
 &lt;/div&gt;
 &lt;div class=&quot;cell border-box-sizing text_cell rendered&quot;&gt;&lt;div class=&quot;inner_cell&quot;&gt;
 &lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
-&lt;p&gt;&lt;img src=&quot;/images/copied_from_nb/resources/my_changes.png&quot; alt=&quot;&quot; title=&quot;Changes Made by Me&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/adversarialwilderness/images/copied_from_nb/resources/my_changes.png&quot; alt=&quot;&quot; title=&quot;Changes Made by Me&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;I Know the changes are not much, but I feel thrilled that I have a PR merged in torchvision repo. Thanks for reading. I encourage you to try to contribute to any Open Source project. I can assure it will be a great learning experience&lt;/p&gt;
 
 &lt;/div&gt;
@@ -442,7 +442,7 @@
         
 &lt;div class=&quot;cell border-box-sizing text_cell rendered&quot;&gt;&lt;div class=&quot;inner_cell&quot;&gt;
 &lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
-&lt;h1 id=&quot;Deep-Snippets&quot;&gt;Deep Snippets&lt;a class=&quot;anchor-link&quot; href=&quot;#Deep-Snippets&quot;&gt; &lt;/a&gt;&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;/images/copied_from_nb/DeepSnippets/DeepSnippets.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;h1 id=&quot;Deep-Snippets&quot;&gt;Deep Snippets&lt;a class=&quot;anchor-link&quot; href=&quot;#Deep-Snippets&quot;&gt; &lt;/a&gt;&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;/adversarialwilderness/images/copied_from_nb/DeepSnippets/DeepSnippets.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
@@ -456,7 +456,7 @@
 &lt;/div&gt;
 &lt;div class=&quot;cell border-box-sizing text_cell rendered&quot;&gt;&lt;div class=&quot;inner_cell&quot;&gt;
 &lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
-&lt;h2 id=&quot;2.-BatchSize-vs-Learning-Rate:&quot;&gt;2. BatchSize vs Learning Rate:&lt;a class=&quot;anchor-link&quot; href=&quot;#2.-BatchSize-vs-Learning-Rate:&quot;&gt; &lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;/images/copied_from_nb/DeepSnippets/batchszvslr.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;2.-BatchSize-vs-Learning-Rate:&quot;&gt;2. BatchSize vs Learning Rate:&lt;a class=&quot;anchor-link&quot; href=&quot;#2.-BatchSize-vs-Learning-Rate:&quot;&gt; &lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;/adversarialwilderness/images/copied_from_nb/DeepSnippets/batchszvslr.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;

@@ -135,7 +135,7 @@ window.onload = wrap_img;
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="/images/copied_from_nb/resources/issue_desc.png" alt="" title="Issue Details: https://github.com/pytorch/vision/issues/1716" /></p>
+<p><img src="/adversarialwilderness/images/copied_from_nb/resources/issue_desc.png" alt="" title="Issue Details: https://github.com/pytorch/vision/issues/1716" /></p>
 <h3 id="Understanding-the-Problem:">Understanding the Problem:<a class="anchor-link" href="#Understanding-the-Problem:"> </a></h3><p>The Existing code doesn’t consider the splits parameter that is passed to the dataset. This is because the EMNIST Class inherits the Default MNIST Class and doesn’t set the classes attribute appropriately.</p>
 <h3 id="Solution?">Solution?<a class="anchor-link" href="#Solution?"> </a></h3><p>I knew that overriding the classes attribute should do the job. From the details provided in the issue and from the link, I was able to create a dictionary that maps the splits into classes. I was a not confident with my solution initially, but then I tried to use it locally with my changes in place and gained confidence over my changes. Finally, I override the classes attribute to get the expected behaviour.</p>
 <h4 id="Key-Learnings:">Key Learnings:<a class="anchor-link" href="#Key-Learnings:"> </a></h4><ol>
@@ -149,7 +149,7 @@ window.onload = wrap_img;
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="/images/copied_from_nb/resources/my_changes.png" alt="" title="Changes Made by Me" /></p>
+<p><img src="/adversarialwilderness/images/copied_from_nb/resources/my_changes.png" alt="" title="Changes Made by Me" /></p>
 <p>I Know the changes are not much, but I feel thrilled that I have a PR merged in torchvision repo. Thanks for reading. I encourage you to try to contribute to any Open Source project. I can assure it will be a great learning experience</p>
 
 </div>
